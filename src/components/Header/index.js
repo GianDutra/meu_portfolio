@@ -31,7 +31,7 @@ const Header = () => {
     <div className="contenedor-header">
       <header>
         <div className="logo">
-          <a href="#">Nick</a>
+          <a href="#">Gian</a>
         </div>
         <nav id="nav" ref={navRef}>
           <ul>
@@ -39,19 +39,19 @@ const Header = () => {
               <a href="#inicio">INICIO</a>
             </li>
             <li>
-              <a href="#sobremi">SOBRE MI</a>
+              <a href="#sobremi">SOBRE MIM</a>
             </li>
             <li>
               <a href="#skills">SKILLS</a>
             </li>
             <li>
-              <a href="#curriculum">CURRICULUM</a>
+              <a href="#curriculum">CURRICULO</a>
             </li>
             <li>
               <a href="#portfolio">PORTFOLIO</a>
             </li>
             <li>
-              <a href="#contacto">CONTACTO</a>
+              <a href="#contacto">CONTATO</a>
             </li>
           </ul>
         </nav>

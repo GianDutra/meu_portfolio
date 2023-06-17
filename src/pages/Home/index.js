@@ -1,4 +1,5 @@
 import hero from "../../assets/image/hero.png"
+import fotoPerfil from "../../assets/image/foto_perfil.png";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import AboutMe from "../../components/AboutMe";
 import Skills from "../../components/Skills";
@@ -9,6 +10,8 @@ import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 
 
+
+
 const Home = () => { 
     return (
         <>
@@ -16,10 +19,10 @@ const Home = () => {
         <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-            <img src={hero} alt=""/>
+            <img src={fotoPerfil} alt=""/>
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>GIAN DUTRA</h1>
+            <h2>Engenheiro de Software - Front-end</h2>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
