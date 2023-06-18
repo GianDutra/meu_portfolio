@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
+
 const Skills = () => {
   const skillsRef = useRef(null);
 
