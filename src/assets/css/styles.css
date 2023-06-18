@@ -285,6 +285,7 @@ body {
     width: 50%;
     padding: 0 20px;
 }
+
 .skills .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
@@ -326,51 +327,62 @@ body {
     font-weight: bold;
 }
 
+/* Sessão linguagens de programacao e idiomas */
+
+.skills .fila .col_linguagem{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col_linguagem h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .col_linguagem .linguagens{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.skills .col_linguagem .linguagens .text{
+    font-size: 10px;
+}
+
+.skills .col_linguagem .linguagens{
+    width: calc(33.33% - 15px);
+    width: 4.7rem;
+    height: 4.7rem;
+    background-color: #1E2225;
+    border-radius: 10px;
+    margin: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.skills .col_linguagem .linguagens:hover{
+    background-color: #1CB698;
+}
+.skills .col_linguagem .linguagens i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+.skills .col_linguagem .linguagens,
+.skills a,
+.skills input[type="button"],
+.skills input[type="submit"] {
+  cursor: url(../image/cursor.svg), auto;
+}
+
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
 
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
 
 .skills .skill .portugues{
     width: 0%;
@@ -405,7 +417,7 @@ body {
 }
 @keyframes italiano {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 45%;}
 }
 
 .skills .skill .japones{
@@ -414,7 +426,7 @@ body {
 }
 @keyframes japones {
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 35%;}
 }
 
 
@@ -782,9 +794,34 @@ footer {
     .skills .fila .col{
         width: 100%;
     }
+    .skills .fila .col_linguagem{
+        width: 100%;
+    }
     .skills .fila .col .barra-skill{
         width: 100%;
     }
+    .skills .fila .col_linguagem .linguagens{
+        width: 100%;
+    }
+
+    .skills .fila  {
+        width: fit-content;
+    }
+
+    .skills .fila .col_linguagem .linguagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    
+      .skills .fila .col_linguagem .linguagens {
+        width: calc(33.33% - 10px);
+        margin: 0 5px 15px 0;
+      }
+
+      .skills .fila .col_linguagem .linguagens i {
+        margin-top: 0.7rem;
+      }
 
     .curriculum .fila{
         display: block;
