@@ -13,11 +13,11 @@ const Skills = () => {
       habilidades[2].classList.add('photoshop');
       habilidades[3].classList.add('wordpress');
       habilidades[4].classList.add('drupal');
-      habilidades[5].classList.add('comunicacion');
-      habilidades[6].classList.add('trabajo');
-      habilidades[7].classList.add('creatividad');
-      habilidades[8].classList.add('dedicacion');
-      habilidades[9].classList.add('proyect');
+      habilidades[5].classList.add('portugues');
+      habilidades[6].classList.add('espanhol');
+      habilidades[7].classList.add('ingles');
+      habilidades[8].classList.add('italiano');
+      habilidades[9].classList.add('japones');
     }
   };
 
@@ -79,46 +79,49 @@ const Skills = () => {
             </div>
           
             <div class="col">
-                <h3>Professional Skills</h3>
+                <h3>Idiomas</h3>
                 <div class="skill">
-                    <span>Comunicación</span>
+                    <span>Português</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>80%</span>
+                            <span>100%</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill">
-                    <span>Trabajo en Equipo</span>
+                    <span>Espanhol</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>70%</span>
+                            <span>100%</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill">
-                    <span>Creatividad</span>
+                    <span>Inglês*</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>99%</span>
+                            <span>85%</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill">
-                    <span>Dedicación</span>
+                    <span>Italiano*</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>65%</span>
+                            <span>40%</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill">
-                    <span>Proyect Management</span>
+                    <span>Japonês*</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>94%</span>
+                            <span>30%</span>
                         </div>
                     </div>
+                </div>
+                <div className="em-andamento">
+                    <span>*Em andamento</span>
                 </div>
             </div>
         </div>

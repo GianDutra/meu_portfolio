@@ -4,72 +4,72 @@ const AboutMe = () => {
     return (
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <h2>Sobre Mim</h2>
+            <p><span>Olá, me chamo Gian.</span>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
 
             <div class="fila">
                
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3>Dados pessoais</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
-                            15-01-1980
+                            <strong>Aniversário</strong>
+                            22/09/2003
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
-                            2555 5454545
+                            <strong>Telefone</strong>
+                            (19) 98134-9674
                         </li>
                         <li>
                             <strong>Email</strong>
-                            cw@example.com
+                            giandutra@hotmail.com.br
                         </li>
                         <li>
                             <strong>Website</strong>
                             www.example.com
                         </li>
                         <li>
-                            <strong>Dirección</strong>
-                            123 San Luis, Argentina
+                            <strong>Endereço</strong>
+                            Rua Walter Schimidt, 149 - Campinas/SP
                         </li>
                         <li>
                             <strong>Cargo</strong>
-                            <span>FREELANCE</span>
+                            <span>PROGRAMADOR</span>
                         </li>
                     </ul>
                 </div>
 
              
                 <div class="col">
-                    <h3>Intereses</h3>
+                    <h3>Interesses</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
+                            <span>JOGOS</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
                             <span>MUSICA</span>
                         </div>
                         <div class="interes">
+                            <i class="fa-brands fa-bitcoin"></i>
+                            <span>CRIPTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-language"></i>
+                            <span>IDIOMAS</span>
+                        </div>
+                        <div class="interes">
                             <i class="fa-solid fa-plane"></i>
                             <span>VIAJAR</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
                             <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
+                            <span>LIVROS</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <i class="fa-solid fa-vr-cardboard"></i>
+                            <span>VR</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-camera"></i>

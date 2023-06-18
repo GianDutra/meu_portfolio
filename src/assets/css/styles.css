@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -9,6 +11,23 @@ html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
+
+/* CURSOR */
+
+body {
+    cursor: url(../image/cursor.svg), auto;
+  }
+  
+  /* Ajusta o tamanho do cursor */
+body {
+    cursor: url(../image/cursor.svg), auto;
+    cursor: url(../image/cursor.svg) 12 12, auto;
+  }
+
+
+
+
+  
 /* MENU */
 .contenedor-header{
     background: #1e2326;
@@ -32,6 +51,13 @@ html{
     color: #1CB698;
     text-decoration: none;
 }
+
+.contenedor-header header .logo a,
+.contenedor input[type="button"].cursor-clicavel,
+.contenedor input[type="submit"].cursor-clicavel {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
 .contenedor-header header ul{
     display: flex;
     list-style: none;
@@ -47,6 +73,14 @@ html{
 .contenedor-header header nav ul li a:hover{
     color: #1CB698;
 }
+
+/* Cursor personalizado */
+.contenedor-header header nav ul li a,
+.contenedor input[type="button"].cursor-clicavel,
+.sobremi input[type="submit"].cursor-clicavel {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
 .nav-responsive{
     background-color: #1CB698;
     color:#fff;
@@ -102,10 +136,21 @@ html{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
-}
+  }
+
 .inicio .contenido-banner .redes a:hover{
     background-color: #1CB698;
+
 }
+
+/* Cursor personalizado */
+.inicio .contenido-banner .redes a,
+.inicio input[type="button"].cursor-clicavel,
+.inicio input[type="submit"].cursor-clicavel {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
+/* Sobre mi */
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -208,6 +253,14 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+  
+.sobremi button,
+.sobremi a,
+.sobremi input[type="button"],
+.sobremi input[type="submit"] {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
@@ -268,6 +321,11 @@ html{
     right: -15px;
     font-size: 14px;
 }
+
+.em-andamento {
+    font-weight: bold;
+}
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
@@ -314,50 +372,52 @@ html{
     100%{width: 55%;}
 }
 
-.skills .skill .comunicacion{
+.skills .skill .portugues{
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 2s portugues forwards;
 }
-@keyframes comunicacion {
+@keyframes portugues {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 100%;}
 }
 
-.skills .skill .trabajo{
+.skills .skill .espanhol{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 2s espanhol forwards;
 }
-@keyframes trabajo {
+@keyframes espanhol {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 100%;}
 }
 
-.skills .skill .creatividad{
+.skills .skill .ingles{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 2s ingles forwards;
 }
-@keyframes creatividad {
+@keyframes ingles {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 85%;}
 }
 
-.skills .skill .dedicacion{
+.skills .skill .italiano{
     width: 0%;
-    animation: 2s dedicacion forwards;
+    animation: 2s italiano forwards;
 }
-@keyframes dedicacion {
+@keyframes italiano {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 40%;}
 }
 
-.skills .skill .proyect{
+.skills .skill .japones{
     width: 0%;
-    animation: 2s proyect forwards;
+    animation: 2s japones forwards;
 }
-@keyframes proyect {
+@keyframes japones {
     0%{width: 0%;}
-    100%{width: 94%;}
+    100%{width: 30%;}
 }
+
+
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
@@ -502,7 +562,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(40,222,187,.8), rgba(40,222,187,.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -521,6 +581,14 @@ html{
 .portfolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
+
+.portfolio .galeria .proyecto .overlay,
+.portfolio a,
+.portfolio input[type="button"],
+.portfolio input[type="submit"] {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
 /* SECCION CONTACTO */
 .contacto{
     background-image: url(../image/contact_bg.png);
@@ -556,6 +624,13 @@ html{
     color: #fff;
     font-size: 18px;
 }
+.contacto .col input, .contacto .col textarea,
+.contacto a,
+.contacto input[type="button"],
+.contacto input[type="submit"] {
+  cursor: url(../image/cursor_i.svg), auto;
+}
+
 .contacto button{
     cursor: pointer;
     background-color: transparent;
@@ -575,12 +650,19 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #28DEBB;
     z-index: -1;
     transition: 1s;
 }
 .contacto button:hover .overlay{
     width: 100%;
+}
+
+.contacto button,
+.contacto a,
+.contacto input[type="button"],
+.contacto input[type="submit"] {
+  cursor: url(../image/cursor_clicavel.svg), auto;
 }
 .contacto .col img{
     width: 100%;
@@ -605,18 +687,20 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
-footer{
+footer {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
     width: 100%;
-}
-footer .redes{
+  }
+  
+  footer .redes {
     margin-bottom: 20px;
-}
-footer .redes a{
+  }
+  
+  footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -628,8 +712,16 @@ footer .redes a{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
-}
-footer .arriba{
+  }
+  
+  footer .redes a,
+  footer a,
+  footer input[type="button"],
+  footer input[type="submit"] {
+    cursor: url(../image/cursor_clicavel.svg), auto;
+  }
+  
+  footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
@@ -642,7 +734,8 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
-}
+  }
+  
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -711,4 +804,6 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+
+    
 }
