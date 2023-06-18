@@ -80,7 +80,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
+                Baixar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
         </div>

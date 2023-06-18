@@ -1,21 +1,21 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import endereco from "../../assets/image/ubicacion.png"
+import endereco from "../../assets/image/endereco.png"
 
 const Contact = () => { 
     return (
     <section id="contacto" className="contacto">
             <div className="contenido-seccion">
-                <h2>CONTACTO</h2>
+                <h2>CONTATO</h2>
                 <div className="fila">
                    
                     <div className="col">
-                        <input type="text" placeholder="Tú Nombre" />
-                        <input type="text" placeholder="Número telefónico" />
-                        <input type="text" placeholder="Dirección de correo" />
-                        <input type="text" placeholder="Tema" />
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <input type="text" placeholder="Seu nome" />
+                        <input type="text" placeholder="Número de telefone" />
+                        <input type="text" placeholder="Endereço" />
+                        <input type="text" placeholder="Assunto" />
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
                         <button>
-                            Enviar Mensaje<i className="fa-solid fa-paper-plane"></i>
+                            Enviar Mensagem<i className="fa-solid fa-paper-plane"></i>
                             <span className="overlay"></span>
                         </button>
                     </div>
@@ -26,15 +26,15 @@ const Contact = () => {
                             <ul>
                                 <li>
                                     <i className="fa-solid fa-location-dot"></i>
-                                    Nicaragua 159, San Rafael Mza
+                                    Walter Schimidt 149
                                 </li>
                                 <li>
                                     <i className="fa-solid fa-mobile-screen"></i>
-                                    Llamanos: 2384 - 4343443 
+                                    (19) 98134-9674
                                 </li>
-                                <li>
+                                <li className="email">
                                     <i className="fa-solid fa-envelope"></i>
-                                    Email: cw@example.com
+                                    giandutra@hotmail.com.br
                                 </li>
                             </ul>
                         </div>

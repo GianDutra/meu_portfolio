@@ -21,7 +21,7 @@ body {
   /* Ajusta o tamanho do cursor */
 body {
     cursor: url(../image/cursor.svg), auto;
-    cursor: url(../image/cursor.svg) 12 12, auto;
+   
   }
 
 
@@ -139,7 +139,7 @@ body {
   }
 
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+    background-color: #1bb799;
 
 }
 
@@ -246,7 +246,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #1bb799;
     z-index: -1;
     transition: 1s;
 }
@@ -687,6 +687,14 @@ body {
     display: inline-block;
     margin-right: 20px;
 }
+.contacto .col .info ul li.email {
+    display: flex;
+    align-items: center;
+  }
+.contacto .col .info ul li.email i {
+    margin-right: 10px;
+  }
+
 footer {
     background-color: #252A2E;
     color: #fff;
