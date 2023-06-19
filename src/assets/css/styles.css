@@ -394,7 +394,23 @@ body {
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
 
-
+@keyframes fa-bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .fa-bounce {
+    animation: fa-bounce 1s infinite;
+  }
+  
+  
 .skills .skill .portugues{
     width: 0%;
     animation: 2s portugues forwards;

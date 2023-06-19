@@ -28,7 +28,7 @@ const Contact = () => {
     }
 
     emailjs
-       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, "YOUR_USER_ID")
+        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, "YOUR_USER_ID")
       .then((result) => {
         console.log("EMAIL ENVIADO");
         setName('');
