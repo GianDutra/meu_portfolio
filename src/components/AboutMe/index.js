@@ -25,12 +25,12 @@ const AboutMe = () => {
                             giandutra@hotmail.com.br
                         </li>
                         <li>
-                            <strong>Website</strong>
-                            www.example.com
+                            <strong>Cidade</strong>
+                            Campinas/SP
                         </li>
                         <li>
                             <strong>Endereço</strong>
-                            Rua Walter Schimidt, 149 - Campinas/SP
+                            Rua Walter Schimidt, 149 
                         </li>
                         <li>
                             <strong>Cargo</strong>
