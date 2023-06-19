@@ -113,7 +113,7 @@ const Skills = () => {
 
             <div className="linguagens">
             <i class="fa-solid fa-cloud"></i>
-                <span className="text">Azure Cloud</span>
+                <span className="text">Azure</span>
             </div>
 
             <div className="linguagens">
@@ -133,7 +133,7 @@ const Skills = () => {
 
             <div className="linguagens">
             <i class="fa-brands fa-envira fa-rotate-90"></i>
-                <span className="text">Mongo DB</span>
+                <span className="text">MongoDB</span>
             </div>
 
             <div className="linguagens">

@@ -5,8 +5,9 @@ const AboutMe = () => {
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mim</h2>
-            <p><span>Olá, me chamo Gian.</span>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
-
+            <div className="textinho">
+            <p><span>Olá, me chamo Gian.</span> Apaixonado por tecnologia e em constante busca por aprendizado. Como Engenheiro de Software em formação, estou empenhado em desenvolver minhas habilidades e contribuir com soluções inovadoras. Com conhecimentos em programação e idiomas, estou pronto para enfrentar desafios e agregar valor em um ambiente de trabalho. Conte comigo para impulsionar projetos e crescer juntos na jornada tecnológica.</p>
+            </div>
             <div class="fila">
                
                 <div class="col">
