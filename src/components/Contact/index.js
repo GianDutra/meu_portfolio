@@ -3,9 +3,9 @@ import emailjs from 'emailjs-com';
 import endereco from '../../assets/image/endereco.png';
 
 const Contact = () => {
-  const [name, setName] = useState('');
+  const [from_name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [address, setAddress] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const formRef = useRef(null);
@@ -13,21 +13,14 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      from_name: name,
-      phone: phone,
-      address: address,
-      subject: subject,
-      message: message
-    }
 
     emailjs
-        .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, "YOUR_USER_ID")
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, "YOUR_USER_ID")
       .then((result) => {
         console.log("EMAIL ENVIADO");
         setName('');
+        setEmail('');
         setPhone('');
-        setAddress('');
         setSubject('');
         setMessage('');
       }, (error) => {
@@ -47,9 +40,16 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Seu nome"
-                value={name}
+                value={from_name}
                 onChange={(e) => setName(e.target.value)}
-                name="name" // Adicione o atributo 'name'
+                name="from_name" // Adicione o atributo 'name'
+              />
+               <input
+                type="text"
+                placeholder="Seu email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                name="email" // Adicione o atributo 'name'
               />
               <input
                 type="text"
@@ -57,13 +57,6 @@ const Contact = () => {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 name="phone" // Adicione o atributo 'name'
-              />
-              <input
-                type="text"
-                placeholder="Endereço"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-                name="address" // Adicione o atributo 'name'
               />
               <input
                 type="text"
