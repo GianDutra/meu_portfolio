@@ -37,7 +37,12 @@ const Skills = () => {
 
             <div className="linguagens">
             <i class="fa-brands fa-html5"></i>
-                <span className="text">HTML/CSS</span>
+                <span className="text">HTML</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-brands fa-css3-alt"></i>
+                <span className="text">CSS</span>
             </div>
 
             <div className="linguagens">
@@ -46,24 +51,45 @@ const Skills = () => {
             </div>
 
             <div className="linguagens">
-                <i class="fa-solid fa-database"></i>
+            <i class="fa-solid fa-code"></i>
+                <span className="text">Typescript</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-brands fa-python"></i>
+                <span className="text">Python</span>
+            </div>
+            
+            <div className="linguagens">
+            <i class="fa-brands fa-java"></i>
+                <span className="text">Java</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-solid fa-c"></i>
+                <span className="text">C/C++</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-brands fa-android"></i>
+                <span className="text">Kotlin</span>
+            </div>
+            
+            <div className="linguagens">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+                <span className="text">Flutter</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-solid fa-database"></i>
                 <span className="text">SQL</span>
             </div>
 
             <div className="linguagens">
-                <i className="fa-brands fa-js"></i>
-                <span className="text">Javascript</span>
+            <i class="fa-solid fa-dna"></i>
+                <span className="text">Prolog</span>
             </div>
-
-            <div className="linguagens">
-            <i className="fa-brands fa-html5"></i>
-                <span className="text">HTML/CSS</span>
-            </div>
-
-            <div className="linguagens">
-                <i class="fa-solid fa-database"></i>
-                <span className="text">SQL</span>
-            </div>
+            
 
         </div>
 
@@ -71,33 +97,53 @@ const Skills = () => {
         <h3 className='titulo_linguagens'>Tecnologias</h3>
 
             <div className="linguagens">
-                <i className="fa-brands fa-js"></i>
-                <span className="text">Javascript</span>
+             <i class="fa-brands fa-github"></i>
+                <span className="text">Github</span>
             </div>
 
             <div className="linguagens">
-            <i className="fa-brands fa-html5"></i>
-                <span className="text">HTML/CSS</span>
+            <i class="fa-brands fa-react"></i>
+                <span className="text">React</span>
             </div>
 
             <div className="linguagens">
-                <i class="fa-solid fa-database"></i>
-                <span className="text">SQL</span>
+            <i class="fa-brands fa-docker"></i>
+                <span className="text">Docker</span>
             </div>
 
             <div className="linguagens">
-                <i className="fa-brands fa-js"></i>
-                <span className="text">Javascript</span>
+            <i class="fa-solid fa-cloud"></i>
+                <span className="text">Azure Cloud</span>
             </div>
 
             <div className="linguagens">
-            <i className="fa-brands fa-html5"></i>
-                <span className="text">HTML/CSS</span>
+            <i class="fa-solid fa-chart-pie"></i>
+                <span className="text">Superset</span>
             </div>
 
             <div className="linguagens">
-                <i class="fa-solid fa-database"></i>
-                <span className="text">SQL</span>
+            <i class="fa-solid fa-chart-simple"></i>
+                <span className="text">Power BI</span>
+            </div>
+            
+            <div className="linguagens">
+            <i class="fa-solid fa-database"></i>
+                <span className="text">Oracle</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-brands fa-envira fa-rotate-90"></i>
+                <span className="text">Mongo DB</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-regular fa-file-word"></i>
+                <span className="text">Office</span>
+            </div>
+
+            <div className="linguagens">
+            <i class="fa-solid fa-server"></i>
+                <span className="text">Redis</span>
             </div>
 
         </div>
