@@ -804,9 +804,10 @@ footer {
         width: 100%;
     }
 
-    .skills .fila  {
-        width: fit-content;
-    }
+    .skills .fila {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
     .skills .fila .col_linguagem .linguagens {
         display: flex;

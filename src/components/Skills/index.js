@@ -149,7 +149,7 @@ const Skills = () => {
         </div>
 
           <div className="col">
-            <h3>Idiomas</h3>
+            <h3 className='titulo_idiomas'>Idiomas</h3>
             <div className="skill">
               <span>Português</span>
               <div className="barra-skill">
