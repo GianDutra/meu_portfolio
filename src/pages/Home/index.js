@@ -24,11 +24,9 @@ const Home = () => {
             <h1>GIAN DUTRA</h1>
             <h2>Engenheiro de Software - Front-end</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="https://github.com/GianDutra" target="_blank"><i className="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gian-vitor-dutra-880a2a211/" target="_blank"><i className="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/5519981349674" target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </section>
