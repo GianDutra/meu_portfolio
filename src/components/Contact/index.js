@@ -14,8 +14,21 @@ const Contact = () => {
     e.preventDefault();
 
 
+      // Verifica se o nome, assunto, mensagem e pelo menos um dos campos de contato estão preenchidos
+      if (from_name === '' || subject === '' || message === '' || (phone === '' && email === '')) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+  
+    // Verifica se o email está no formato válido usando regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email !== '' && !emailRegex.test(email)) {
+      alert('Por favor, insira um endereço de email válido.');
+      return;
+    }
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, "YOUR_USER_ID")
+       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, "YOUR_USER_ID")
       .then((result) => {
         console.log("EMAIL ENVIADO");
         setName('');
