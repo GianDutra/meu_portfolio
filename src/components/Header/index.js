@@ -31,7 +31,7 @@ const Header = () => {
     <div className="contenedor-header">
       <header>
         <div className="logo">
-          <a href="#">Gian</a>
+          <a href="#">Gian's Portfolio</a>
         </div>
         <nav id="nav" ref={navRef}>
           <ul>

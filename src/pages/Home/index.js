@@ -1,4 +1,3 @@
-import hero from "../../assets/image/hero.png"
 import fotoPerfil from "../../assets/image/foto_perfil.png";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import AboutMe from "../../components/AboutMe";

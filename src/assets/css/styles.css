@@ -51,6 +51,9 @@ body {
     color: #1CB698;
     text-decoration: none;
 }
+.contenedor-header header .logo a:hover{
+    text-shadow: 0px 0px 8px #28debb;
+}
 
 .contenedor-header header .logo a,
 .contenedor input[type="button"].cursor-clicavel,
