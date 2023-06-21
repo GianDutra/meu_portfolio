@@ -9,7 +9,7 @@ const Portfolio = () => {
     return (
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2>PROJETOS</h2>
             <div class="galeria">
                 <div class="proyecto">
                     <img src={p1} alt=""/>
