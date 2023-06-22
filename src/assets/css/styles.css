@@ -159,6 +159,24 @@ body {
 
 }
 
+@keyframes blink-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .blink {
+    animation: blink-animation 1s step-end infinite;
+  }
+  
+  
+  
 /* Cursor personalizado */
 .inicio .contenido-banner .redes a,
 .inicio input[type="button"].cursor-clicavel,

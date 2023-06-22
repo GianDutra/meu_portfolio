@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const TypewriterComponent = ({ phrases, period, eraseSpeed }) => {
   const typewriterRef = useRef(null);
@@ -7,6 +7,7 @@ const TypewriterComponent = ({ phrases, period, eraseSpeed }) => {
   let currentPhrase = '';
   let isDeleting = false;
   let typingSpeed = 100; // Velocidade inicial de digitação
+  const [isBlinking, setIsBlinking] = useState(true);
 
   useEffect(() => {
     const typewriterElement = typewriterRef.current;
@@ -21,7 +22,10 @@ const TypewriterComponent = ({ phrases, period, eraseSpeed }) => {
         currentPhrase = phrase.substring(0, currentPhrase.length + 1);
       }
 
-      typewriterElement.innerHTML = '<span class="wrap">I\'m ' + currentPhrase + '|</span>';
+      const content = `I'm ${currentPhrase}`;
+      const blinkingChar = isBlinking ? '|' : '';
+
+      typewriterElement.innerHTML = `<span class="wrap">${content}<span class="blink">${blinkingChar}</span></span>`;
 
       if (!isDeleting && currentPhrase === phrase) {
         // Aguarda um período após a frase ser totalmente digitada
@@ -29,7 +33,7 @@ const TypewriterComponent = ({ phrases, period, eraseSpeed }) => {
           isDeleting = true;
           typingSpeed = eraseSpeed;
           type();
-        }, 2000); // Atraso de 2 segundos antes de iniciar o apagamento
+        }, 3000); // Atraso de 2 segundos antes de iniciar o apagamento
       } else if (isDeleting && currentPhrase === '') {
         // Aguarda um período após a frase ser totalmente apagada
         isDeleting = false;
@@ -40,6 +44,12 @@ const TypewriterComponent = ({ phrases, period, eraseSpeed }) => {
         animationFrameId = setTimeout(type, typingSpeed);
       }
     };
+
+    const toggleBlink = () => {
+      setIsBlinking((prevIsBlinking) => !prevIsBlinking);
+    };
+
+    setInterval(toggleBlink, 500); // Alterna o estado de isBlinking a cada 500 milissegundos
 
     type(); // Inicia o efeito de digitação
 
@@ -56,4 +66,3 @@ const TypewriterComponent = ({ phrases, period, eraseSpeed }) => {
 };
 
 export default TypewriterComponent;
-
