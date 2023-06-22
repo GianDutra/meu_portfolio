@@ -51,7 +51,7 @@ const Curriculum = () => {
                 <h4>Aplicação Web</h4>
                 <span class="casa">Via Fácil</span>
                 <span class="fecha">2022 (2º Semestre)</span>
-                <p>Essa aplicação web revolucionou a forma como as pessoas emitiam suas segundas vias, proporcionando facilidade ao concentrar todas as opções em um único local. Com a utilização de tecnologias modernas como React.js, Spring Boot e MongoDB, o aplicativo oferece aos usuários opções de login tradicional e escaneamento de QR Code, ambos utilizando o JWT. </p>
+                <p>Essa aplicação web revolucionou a forma como as pessoas emitiam suas segundas vias, proporcionando facilidade ao concentrar todas as opções em um único local. Com a utilização de tecnologias modernas como React.js, Spring Boot e MongoDB, o aplicativo oferecia aos usuários opções de login tradicional e escaneamento de QR Code, ambos utilizando o JWT. </p>
                 <div class="conectord">
                     <div class="circulod"></div>
                 </div>

@@ -7,6 +7,7 @@ import Curriculum from "../../components/Curriculum";
 import Portfolio from "../../components/Portfolio";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
+import TypewriterComponent from '../../components/TypewriterComponent';
 
 
 
@@ -21,7 +22,7 @@ const Home = () => {
             <img src={fotoPerfil} alt=""/>
             </div>
             <h1>GIAN DUTRA</h1>
-            <h2>Engenheiro de Software - Front-end</h2>
+            <TypewriterComponent phrases={["software engineer", "bpmn modeler", "front-end dev"]} period={50} eraseSpeed={150}/>
             <div class="redes">
                 <a href="https://github.com/GianDutra" target="_blank"><i className="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/gian-vitor-dutra-880a2a211/" target="_blank"><i className="fa-brands fa-linkedin-in"></i></a>
