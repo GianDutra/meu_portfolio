@@ -989,6 +989,13 @@ footer {
       margin-left: 0;
     }
   
+    .portfolio .galeria .proyecto .overlay {
+      pointer-events: initial;
+    }
+    .portfolio .galeria .proyecto .overlay {
+      height: 35%; /* ou qualquer outra altura desejada */
+      opacity: 1;
+    }
     .portfolio .galeria {
       display: block;
       width: 100%;
