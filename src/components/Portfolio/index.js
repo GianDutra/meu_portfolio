@@ -115,7 +115,9 @@ const Portfolio = () => {
                     </div>
                     </div>
                   <div class ="proyecto">
+                  <a href="https://github.com/GianDutra/AI_AspiradorPo" target="_blank" rel="noopener noreferrer">
                   <img src={p7} alt=""/>
+                  </a>
                   <div class ="overlay">
                     <h3>IA - Aspirador de Pó</h3>
                     <p>Python Git</p>
