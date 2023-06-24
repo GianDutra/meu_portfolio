@@ -599,6 +599,7 @@ body {
 }
 /* SECCION PORTFOLIO */
 
+
 .portfolio {
   background-color: #252A2E;
   color: #fff;
@@ -620,26 +621,40 @@ body {
 .portfolio .galeria {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: -0.285rem;
+  margin-right: -0.285rem;
+  
 }
 
 .portfolio .galeria .proyecto {
+  
+  border: 2px solid #1CB698;
   position: relative;
   max-width: 340px;
   height: fit-content;
-  margin: 10px;
+  margin: 10px 10px 1.55rem 10px;
   cursor: pointer;
   transition: transform 0.3s;
-  overflow: hidden;
+  
+  
 }
 
 .portfolio .galeria .proyecto img {
   width: 100%;
   display: block;
-  transition: transform 0.3s;
+  transition: transform 0.6s, margin 0.6s;
+  margin: -20px 0 20px -20px; /* Ajustando as margens */
+  position: relative; /* Adicionando position: relative */
+  z-index: 1; /* Ajustando o z-index para que a imagem fique acima da borda */
 }
 
-
+.portfolio .galeria .proyecto img:hover {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s, margin 0.6s;
+  margin: 0;
+} 
 
 .portfolio .galeria .proyecto .overlay {
   position: absolute;
@@ -656,15 +671,19 @@ body {
   letter-spacing: 3px;
   opacity: 0;
   padding: 30px 20px 20px 20px;
-  z-index: 50;
+  z-index: 2;
   color: #fff;
+  pointer-events: none;
 }
 
 .portfolio .galeria .proyecto:hover .overlay {
   height: 35%;
   opacity: 1;
 }
-
+.portfolio .galeria .proyecto:hover  {
+  border: 2px solid #1CB698;
+  z-index: 3;
+}
 
 
 .portfolio .galeria .proyecto .overlay h3 {
@@ -691,7 +710,7 @@ body {
 
 
 .portfolio .galeria .proyecto:hover {
-  border: 2px solid #1CB698
+  border: 2px solid #1CB698;
 }
 
 
@@ -979,11 +998,10 @@ footer {
     }
     .portfolio .galeria .proyecto img {
       width: 100%;
+      margin: 0;
     }
-  
+ 
     .contacto  {
-  /* Resto do seu código CSS */
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;

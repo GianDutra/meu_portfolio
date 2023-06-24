@@ -99,7 +99,9 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div class="proyecto">
+                <a href="https://github.com/GianDutra/ScrapyRankingBrands" target="_blank" rel="noopener noreferrer">
                 <img src={p5} alt=""/>
+                </a>
                     <div class="overlay">
                         <h3>Python Web Crawler</h3>
                         <p>Python MongoDB Git</p>
