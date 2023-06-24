@@ -33,7 +33,7 @@ const TypewriterComponent = ({ phrases, period, eraseSpeed }) => {
           isDeleting = true;
           typingSpeed = eraseSpeed;
           type();
-        }, 3000); // Atraso de 2 segundos antes de iniciar o apagamento
+        }, 3000); // Atraso de 3 segundos antes de iniciar o apagamento
       } else if (isDeleting && currentPhrase === '') {
         // Aguarda um período após a frase ser totalmente apagada
         isDeleting = false;
