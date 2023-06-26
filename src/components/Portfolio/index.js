@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-/*import p1 from "../../assets/image/p1.jpg"; */
 import p1 from "../../assets/image/p1_new.png";
-/*import p2 from "../../assets/image/p2.jpg"; */
 import p2 from "../../assets/image/p2_new.png";
 import p3 from "../../assets/image/p3_new.png";
 import p4 from "../../assets/image/p4_new.png";
@@ -50,7 +48,11 @@ const Portfolio = () => {
       startAnimation();
     };
 
-    window.addEventListener("load", handleWindowLoad);
+    if (window.innerWidth < 768) {
+      startAnimation();
+    } else {
+      window.addEventListener("load", handleWindowLoad);
+    }
 
     return () => {
       window.removeEventListener("load", handleWindowLoad);
