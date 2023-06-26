@@ -860,7 +860,7 @@ cursor: url(../image/cursor_clicavel.svg), auto;
     border: 2px solid #28DEBB;
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: 0.1875rem auto;
     padding: 10px 22px;
     font-size: 16px;
     color: #28DEBB;
@@ -914,6 +914,7 @@ cursor: url(../image/cursor_clicavel.svg), auto;
     margin:auto;
     width: 45%;
 }
+
 
 
 
@@ -1147,6 +1148,11 @@ footer {
       background-position: center center; 
       background-size: cover;
       }
+
+      .contacto button {
+        margin: 0rem auto;
+      
+    }
       
     @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
         /* Seu código CSS específico para o iPhone SE */
