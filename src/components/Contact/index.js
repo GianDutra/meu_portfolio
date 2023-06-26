@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import myphoto from '../../assets/image/myphoto.png';
-import TypewriterComponent from '../TypewriterComponent';
 
 const Contact = () => {
   const [from_name, setName] = useState('');
