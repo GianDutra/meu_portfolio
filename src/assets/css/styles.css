@@ -195,6 +195,11 @@ body {
     margin: auto;
     
 }
+
+.sobremi img {
+  width: 65%;
+  margin: -1rem 0.625rem 0.625rem 4rem;
+}
 .sobremi h2{
     font-size: 65px;
     font-family: 'Righteous';
@@ -221,6 +226,18 @@ body {
 
 .sobremi .fila{
     display: flex;
+}
+.sobremi .frase {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+
+}
+
+
+.sobremi .borda-frase {
+  padding: 10px;
+  padding-top: 1rem;
 }
 .sobremi .fila .col
 {
@@ -263,12 +280,54 @@ body {
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
+    padding-top: 1.3rem;
 }
+.sobremi .fila .col .contenedor-intereses .interes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: rotateX(30deg) translateZ(-15px);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover::before {
+  transform: rotateX(0) translateZ(0);
+}
+.sobremi .fila .col .contenedor-intereses .interes {
+  position: relative;
+  perspective: 1000px;
+  
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+  background: linear-gradient(135deg, #1CB698, #1C92B6);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    
+}
+
+.sobremi .fila .col .contenedor-intereses .interes span {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover span {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
 .sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 2px;
+  transform: rotateX(30deg);
+  transition: transform 0.3s ease-in-out;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover i {
+  transform: rotateX(0);
 }
 .sobremi button{
     cursor: pointer;
@@ -946,6 +1005,7 @@ footer {
 
 
 @media screen and (max-width: 700px) {
+
     .sobremi .fila {
       display: block;
     }
@@ -953,6 +1013,17 @@ footer {
       width: 100%;
     }
   
+    .sobremi img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .sobremi .borda-frase {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+
     .skills .fila {
       display: flex;
       flex-wrap: wrap;
