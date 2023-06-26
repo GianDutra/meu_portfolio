@@ -10,8 +10,8 @@ import p4 from "../../assets/image/p4_new.png";
 import p5 from "../../assets/image/p5_new.png";
 import p6 from "../../assets/image/p6_new.jpg";
 import p7 from "../../assets/image/p7.png";
-import p8 from "../../assets/image/p8.jpg"
-import em_breve from "../../assets/image/em_breve.jpg"
+import p8 from "../../assets/image/p8.jpg";
+import em_breve from "../../assets/image/em_breve.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,86 +63,117 @@ const Portfolio = () => {
         <h2>PROJETOS</h2>
         <div className="galeria" ref={portfolioRef}>
           <div className="proyecto">
-          <a href="https://github.com/GianDutra/Meu-Ignite-Feed" target="_blank" rel="noopener noreferrer">
-            <img src={p1} alt="" />
+            <a
+              href="https://github.com/GianDutra/Meu-Ignite-Feed"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p1} alt="" />
             </a>
             <div className="overlay">
               <h3>Ignite Feed</h3>
               <p>HTML CSS Javascript React Git</p>
             </div>
           </div>
-          <div class="proyecto">
-          <a href="https://github.com/GianDutra/meu_portfolio" target="_blank" rel="noopener noreferrer">
-                <img src={p2} alt=""/>
-                </a>
-                    <div class="overlay">
-                        <h3>My portfolio</h3>
-                        <p>HTML CSS Javascript React Git Gsap</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                <a href="https://github.com/GianDutra/Via-Facil" target="_blank" rel="noopener noreferrer">
-                <img src={p3} alt=""/>
-                </a>
-                    <div class="overlay">
-                        <h3>Via Fácil</h3>
-                        <p>HTML CSS Javascript React Git Spring MongoDB </p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                <a href="https://github.com/GianDutra/ModuloCidadao" target="_blank" rel="noopener noreferrer">
-                <img src={p4} alt=""/>
-                </a>
-                    <div class="overlay">
-                        <h3>Modulo Cidadão</h3>
-                        <p>Dart Flutter Firebase Android_Studio</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                <a href="https://github.com/GianDutra/ScrapyRankingBrands" target="_blank" rel="noopener noreferrer">
-                <img src={p5} alt=""/>
-                </a>
-                    <div class="overlay">
-                        <h3>Python Web Crawler</h3>
-                        <p>Python MongoDB Git</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                  <a href="https://github.com/GianDutra/Estoque_JavaFx" target="_blank" rel="noopener noreferrer">
-                <img src={p6} alt=""/>
-                </a>
-                    <div class="overlay">
-                        <h3>Estoque JavaFx</h3>
-                        <p>Java JavaFx Git PostgreSQL</p>
-                    </div>
-                    </div>
-                  <div class ="proyecto">
-                  <a href="https://github.com/GianDutra/AI_AspiradorPo" target="_blank" rel="noopener noreferrer">
-                  <img src={p7} alt=""/>
-                  </a>
-                  <div class ="overlay">
-                    <h3>IA - Aspirador de Pó</h3>
-                    <p>Python Git</p>
-                  </div>
-              </div>
-              <div class ="proyecto">
-                <a href="https://github.com/GianDutra/vtuber_voice" target="_blank" rel="noopener noreferrer">
-                  <img src={p8} alt=""/>
-                  </a>
-                  <div class ="overlay">
-                    <h3>Vtuber Voice App</h3>
-                    <p>Python Selenium Git</p>
-                  </div>
-              </div>
-              <div class ="proyecto">
-                  <img src={em_breve} alt=""/>
-                  <div class ="overlay">
-                    <h3>Em breve</h3>
-                    <p>Em breve</p>
-                  </div>
-              </div>
-
-      </div>
+          <div className="proyecto">
+            <a
+              href="https://github.com/GianDutra/meu_portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p2} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>My portfolio</h3>
+              <p>HTML CSS Javascript React Git Gsap</p>
+            </div>
+          </div>
+          <div className="proyecto">
+            <a
+              href="https://github.com/GianDutra/Via-Facil"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p3} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Via Fácil</h3>
+              <p>HTML CSS Javascript React Git Spring MongoDB</p>
+            </div>
+          </div>
+          <div className="proyecto">
+            <a
+              href="https://github.com/GianDutra/ModuloCidadao"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p4} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Modulo Cidadão</h3>
+              <p>Dart Flutter Firebase Android_Studio</p>
+            </div>
+          </div>
+          <div className="proyecto">
+            <a
+              href="https://github.com/GianDutra/ScrapyRankingBrands"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p5} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Python Web Crawler</h3>
+              <p>Python MongoDB Git</p>
+            </div>
+          </div>
+          <div className="proyecto">
+            <a
+              href="https://github.com/GianDutra/Estoque_JavaFx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p6} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Estoque JavaFx</h3>
+              <p>Java JavaFx Git PostgreSQL</p>
+            </div>
+          </div>
+          <div className="proyecto">
+            <a
+              href="https://github.com/GianDutra/AI_AspiradorPo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p7} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>IA - Aspirador de Pó</h3>
+              <p>Python Git</p>
+            </div>
+          </div>
+          <div className="proyecto">
+            <a
+              href="https://github.com/GianDutra/vtuber_voice"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p8} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Vtuber Voice App</h3>
+              <p>Python Selenium Git</p>
+            </div>
+          </div>
+          <div className="proyecto">
+            <img src={em_breve} alt="" />
+            <div className="overlay">
+              <h3>Em breve</h3>
+              <p>Em breve</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
