@@ -17,7 +17,7 @@ const Contact = () => {
 
       // Verifica se o nome, assunto, mensagem e pelo menos um dos campos de contato estão preenchidos
       if (from_name === '' || subject === '' || message === '' || (phone === '' && email === '')) {
-        alert('Por favor, preencha todos os campos obrigatórios.');
+        alert('Por favor, preencha todos os campos obrigatórios. (*)');
         return;
       }
   
@@ -57,28 +57,28 @@ const Contact = () => {
             <form ref={formRef} onSubmit={sendEmail}>
               <input
                 type="text"
-                placeholder="Seu nome"
+                placeholder="Seu nome*"
                 value={from_name}
                 onChange={(e) => setName(e.target.value)}
                 name="from_name"
               />
               <input
                 type="text"
-                placeholder="Seu email"
+                placeholder="Seu email*"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 name="email"
               />
               <input
                 type="text"
-                placeholder="Número de telefone"
+                placeholder="Telefone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 name="phone"
               />
               <input
                 type="text"
-                placeholder="Assunto"
+                placeholder="Assunto*"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 name="subject"
@@ -87,7 +87,7 @@ const Contact = () => {
                 <textarea
                   cols="30"
                   rows="10"
-                  placeholder="Mensagem"
+                  placeholder="Mensagem*"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   name="message"

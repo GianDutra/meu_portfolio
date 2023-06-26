@@ -115,14 +115,6 @@ body {
     border-radius: 40px;
 } 
 
-/*.inicio .contenido-banner{
-    padding: 20px;
-    background-color: #1e2326;
-    max-width: 350px;
-    margin: auto;
-    text-align: center;
-    border-radius: 40px;
-}*/
 .inicio .contenido-banner img{
     margin-top: 40px;
     border: 10px solid #1CB698;
@@ -851,6 +843,7 @@ cursor: url(../image/cursor_clicavel.svg), auto;
 
 .contacto .col textarea {
     height: 10rem;
+    resize: none;
 }
 
 .contacto .col .textarea-wrapper {
@@ -1009,6 +1002,20 @@ footer {
   html {
     font-size: 14px;
   }
+
+  .inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../image/background_mobile3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-attachment: scroll;
+    
+} 
+
     .sobremi .fila {
       display: block;
     }
@@ -1096,6 +1103,7 @@ footer {
     }
  
     .contacto  {
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1108,6 +1116,7 @@ footer {
         padding: 0 1rem; /* Adicione um espaçamento interno nas laterais */
         overflow: hidden; /* Adicione esta linha para ocultar o conteúdo excedente */
         height: auto; /* Altere a altura para auto */
+        border: none;
       }
     
       .contacto .fila .col {
@@ -1132,9 +1141,13 @@ footer {
         width: 100%;
     }
 
-   
+    .contacto{
+      background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+      url(../image/space2.gif);
+      background-position: center center; 
+      background-size: cover;
+      }
       
-
     @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
         /* Seu código CSS específico para o iPhone SE */
         /* Faça as alterações necessárias para corrigir a exibição no iPhone SE */
@@ -1204,7 +1217,7 @@ footer {
 
   
     .contacto .contenido-seccion {
-
+        border: none;
         max-width: 100%;
         padding: 0 1rem; /* Adicione um espaçamento interno nas laterais */
         overflow: hidden; /* Adicione esta linha para ocultar o conteúdo excedente */
