@@ -28,9 +28,13 @@ const Contact = () => {
       return;
     }
 
-    emailjs
-        .sendForm("service_ipqyrxd", "template_u4rb5mq", formRef.current, "xZ9BVbMVvJd_xgU30")
-      .then((result) => {
+    
+  emailjs.sendForm(
+    process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+    formRef.current,
+    process.env.REACT_APP_EMAILJS_USER_ID
+  ).then((result) => {
         console.log("EMAIL ENVIADO");
         setName('');
         setEmail('');
