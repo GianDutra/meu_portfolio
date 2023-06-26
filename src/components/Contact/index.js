@@ -93,7 +93,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <button type="submit">
-                Enviar<i className="fa-solid fa-paper-plane"></i>
+                Enviar <i className="fa-solid fa-paper-plane"></i>
                 <span className="overlay"></span>
               </button>
             </form>
