@@ -42,7 +42,7 @@ const Skills = () => {
         <h2>Skills</h2>
         <div className="fila">
             
-        <div className="col_linguagem">
+        <div className="col_linguagem" data-aos="zoom-in" data-aos-duration="2500" ata-aos-easing="ease">
         <h3 className='titulo_linguagens'>Linguagens</h3>
 
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -103,7 +103,7 @@ const Skills = () => {
 
         </div>
 
-        <div className="col_linguagem">
+        <div className="col_linguagem" data-aos="zoom-in" data-aos-duration="2500" data-aos-easing="ease">
         <h3 className='titulo_linguagens'>Tecnologias</h3>
 
              <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -158,7 +158,7 @@ const Skills = () => {
 
         </div>
 
-          <div className="col">
+          <div className="col" data-aos="zoom-in" data-aos-duration="2500" data-aos-easing="ease">
             <h3 className='titulo_idiomas'>Idiomas</h3>
             <div className="skill">
               <span>Português</span>

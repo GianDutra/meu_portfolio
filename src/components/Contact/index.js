@@ -1,4 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import AOS from 'aos';
 import emailjs from 'emailjs-com';
 import myphoto from '../../assets/image/myphoto.png';
 
@@ -9,17 +11,23 @@ const Contact = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const formRef = useRef(null);
+  const [contactRef, inView] = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      AOS.init();
+    }
+  }, [inView]);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Verifica se o nome, assunto, mensagem e pelo menos um dos campos de contato estão preenchidos
+    if (from_name === '' || subject === '' || message === '' || (phone === '' && email === '')) {
+      alert('Por favor, preencha todos os campos obrigatórios. (*)');
+      return;
+    }
 
-      // Verifica se o nome, assunto, mensagem e pelo menos um dos campos de contato estão preenchidos
-      if (from_name === '' || subject === '' || message === '' || (phone === '' && email === '')) {
-        alert('Por favor, preencha todos os campos obrigatórios. (*)');
-        return;
-      }
-  
     // Verifica se o email está no formato válido usando regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email !== '' && !emailRegex.test(email)) {
@@ -27,31 +35,40 @@ const Contact = () => {
       return;
     }
 
-    
-  emailjs.sendForm(
-    process.env.REACT_APP_EMAILJS_SERVICE_ID,
-    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-    formRef.current,
-    process.env.REACT_APP_EMAILJS_USER_ID
-  ).then((result) => {
-        console.log("EMAIL ENVIADO");
-        setName('');
-        setEmail('');
-        setPhone('');
-        setSubject('');
-        setMessage('');
-      }, (error) => {
-        console.log("EMAIL NÃO ENVIADO");
-      });
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log('EMAIL ENVIADO');
+          setName('');
+          setEmail('');
+          setPhone('');
+          setSubject('');
+          setMessage('');
+        },
+        (error) => {
+          console.log('EMAIL NÃO ENVIADO');
+        }
+      );
 
     e.target.reset();
   };
 
   return (
-    <section id="contacto" className="contacto">
+    <section id="contacto" className="contacto" ref={contactRef}>
       <div className="contenido-seccion">
         <h2>CONTATO</h2>
-        <div className="fila">
+        <div
+          className={`fila ${inView ? 'aos-init' : ''}`}
+          data-aos="zoom-in"
+          data-aos-duration="3000"
+          data-aos-easing="ease"
+        >
           <div className="col">
             <form ref={formRef} onSubmit={sendEmail}>
               <input
@@ -101,25 +118,16 @@ const Contact = () => {
           <div className="col">
             <div className="info">
               <h3>Quer conversar sobre um projeto?</h3>
-              <p>
-                Sinta-se livre para me chamar!!!<br />
-                <br />
-                
-              </p>
+              <p>Sinta-se livre para me chamar!!!</p>
             </div>
             <div class="contenedor-img">
-            <img src={myphoto} alt=""/>
+              <img src={myphoto} alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
   );
-  }  
-  
+};
 
 export default Contact;
-
-
-
-

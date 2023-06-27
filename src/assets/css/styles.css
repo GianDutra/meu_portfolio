@@ -14,9 +14,7 @@ html{
 
 /* CURSOR */
 
-body {
-    cursor: url(../image/cursor.svg), auto;
-  }
+
   
   /* Ajusta o tamanho do cursor */
 body {
@@ -968,6 +966,29 @@ footer {
     font-size: 18px;
   }
   
+  /* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #131517;
+}
+
+/* Estilo do indicador de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #1CB698;
+}
+
+/* Estilo do indicador de rolagem ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #16927a;
+}
+
+::-webkit-scrollbar {
+  width: 15px; /* Aumente o valor para aumentar a largura da barra de rolagem */
+}
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -1076,7 +1097,11 @@ footer {
     .curriculum .fila .derecha {
       margin-left: 0;
     }
-  
+  .curriculum .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden; /* Adicionado overflow:hidden */
+}
     .portfolio .galeria .proyecto .overlay {
       pointer-events: initial;
     }

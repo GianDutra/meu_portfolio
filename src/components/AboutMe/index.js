@@ -41,7 +41,7 @@ const AboutMe = () => {
 
     return (
       <section id="sobremi" className="sobremi">
-        <div className="contenido-seccion">
+        <div className="contenido-seccion" data-aos="zoom-in" data-aos-duration="2500" ata-aos-easing="ease">
           <h2>Sobre Mim</h2>
           <div className="textinho">
             <p>
