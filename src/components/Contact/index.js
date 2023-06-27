@@ -66,7 +66,7 @@ const Contact = () => {
         <div
           className={`fila ${inView ? 'aos-init' : ''}`}
           data-aos="zoom-in"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
           data-aos-easing="ease"
         >
           <div className="col">
