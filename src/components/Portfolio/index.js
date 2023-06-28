@@ -62,7 +62,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
-        <h2>PROJETOS</h2>
+        <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://github.com/GianDutra/Meu-Ignite-Feed" target="_blank" rel="noopener noreferrer">
@@ -104,7 +104,7 @@ const Portfolio = () => {
               <img src={p4} alt="" />
             </a>
             <div className="overlay">
-              <h3>Modulo Cidadão</h3>
+              <h3>Citizen Module</h3>
               <p>Dart Flutter Firebase Android_Studio</p>
             </div>
           </div>
@@ -130,7 +130,7 @@ const Portfolio = () => {
               <img src={p6} alt="" />
             </a>
             <div className="overlay">
-              <h3>Estoque JavaFx</h3>
+              <h3>JavaFx Stock</h3>
               <p>Java JavaFx Git PostgreSQL</p>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Portfolio = () => {
               <img src={p7} alt="" />
             </a>
             <div className="overlay">
-              <h3>IA - Aspirador de Pó</h3>
+              <h3>AI - Vacuum Cleaner</h3>
               <p>Python Git</p>
             </div>
           </div>
@@ -163,8 +163,8 @@ const Portfolio = () => {
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <img src={em_breve} alt="" />
             <div className="overlay">
-              <h3>Em breve</h3>
-              <p>Em breve</p>
+              <h3>Coming soon</h3>
+              <p>Coming soon</p>
             </div>
           </div>
         </div>

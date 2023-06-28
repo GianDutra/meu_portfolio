@@ -112,7 +112,7 @@ body {
     border-radius: 40px;
 } 
 
-.inicio .contenido-banner img{
+.inicio .contenido-banner .contenedor-img > img{
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
@@ -138,7 +138,7 @@ body {
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 30px 5px;
     font-size: 20px;
     transition: .3s;
   }
@@ -147,6 +147,9 @@ body {
     background-color: #1bb799;
 
 }
+
+
+
 
 @keyframes blink-animation {
     0% {
@@ -164,7 +167,7 @@ body {
     animation: blink-animation 1s step-end infinite;
   }
   
-  
+
   
 /* Cursor personalizado */
 .inicio .contenido-banner .redes a,

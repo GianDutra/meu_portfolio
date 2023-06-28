@@ -36,22 +36,22 @@ const Header = () => {
         <nav id="nav" ref={navRef}>
           <ul>
             <li>
-              <a href="#inicio">INICIO</a>
+              <a href="#inicio">HOME</a>
             </li>
             <li>
-              <a href="#sobremi">SOBRE MIM</a>
+              <a href="#sobremi">ABOUT ME</a>
             </li>
             <li>
               <a href="#skills">SKILLS</a>
             </li>
             <li>
-              <a href="#curriculum">CURRICULO</a>
+              <a href="#curriculum">CURRICULUM</a>
             </li>
             <li>
               <a href="#portfolio">PORTFOLIO</a>
             </li>
             <li>
-              <a href="#contacto">CONTATO</a>
+              <a href="#contacto">CONTACT</a>
             </li>
           </ul>
         </nav>

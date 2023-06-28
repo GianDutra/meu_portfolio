@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <section id="contacto" className="contacto" ref={contactRef}>
       <div className="contenido-seccion">
-        <h2>CONTATO</h2>
+        <h2>CONTACT</h2>
         <div
           className={`fila ${inView ? 'aos-init' : ''}`}
           data-aos="zoom-in"
@@ -73,28 +73,28 @@ const Contact = () => {
             <form ref={formRef} onSubmit={sendEmail}>
               <input
                 type="text"
-                placeholder="Seu nome*"
+                placeholder="Your name*"
                 value={from_name}
                 onChange={(e) => setName(e.target.value)}
                 name="from_name"
               />
               <input
                 type="text"
-                placeholder="Seu email*"
+                placeholder="Your email*"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 name="email"
               />
               <input
                 type="text"
-                placeholder="Telefone"
+                placeholder="Phone Number(Optional)"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 name="phone"
               />
               <input
                 type="text"
-                placeholder="Assunto*"
+                placeholder="Subject*"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 name="subject"
@@ -103,22 +103,22 @@ const Contact = () => {
                 <textarea
                   cols="30"
                   rows="10"
-                  placeholder="Mensagem*"
+                  placeholder="Message*"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   name="message"
                 ></textarea>
               </div>
               <button type="submit">
-                Enviar <i className="fa-solid fa-paper-plane"></i>
+                Submit <i className="fa-solid fa-paper-plane"></i>
                 <span className="overlay"></span>
               </button>
             </form>
           </div>
           <div className="col">
             <div className="info">
-              <h3>Quer conversar sobre um projeto?</h3>
-              <p>Sinta-se livre para me chamar!!!</p>
+            <h3>Do you want to discuss a project?</h3>
+            <p>Feel free to contact me!</p>
             </div>
             <div class="contenedor-img">
               <img src={myphoto} alt="" />

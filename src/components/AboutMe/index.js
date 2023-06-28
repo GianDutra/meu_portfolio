@@ -6,7 +6,7 @@ const AboutMe = () => {
   useEffect(() => {
     const updateFraseTypewriter = () => {
       const fraseDiv = document.getElementById("frase-typewriter");
-      const frase = '“Software é uma excelente combinação entre a arte e a engenharia”';
+      const frase = '“Software is a great combination between artistry and engineering”';
       let progress = 0;
 
       const typingInterval = setInterval(() => {
@@ -42,14 +42,15 @@ const AboutMe = () => {
     return (
       <section id="sobremi" className="sobremi">
         <div className="contenido-seccion" data-aos="zoom-in" data-aos-duration="2500" ata-aos-easing="ease">
-          <h2>Sobre Mim</h2>
+          <h2>About Me</h2>
           <div className="textinho">
             <p>
                 <div className='borda-bio'>
-              <span>Olá, me chamo Gian.</span> Apaixonado por tecnologia e em constante busca por aprendizado. 
-              Como Engenheiro de Software, estou empenhado em desenvolver minhas habilidades e contribuir com soluções inovadoras.
-               <br/>Com conhecimentos em programação e idiomas, estou pronto para enfrentar desafios e agregar valor em um ambiente de trabalho. Conte comigo para impulsionar projetos e crescer juntos na jornada tecnológica.
-               </div> </p> 
+              <span>Hello, I'm Gian.</span> Passionate about technology and constantly seeking learning opportunities.
+As a Software Engineer, I am committed to developing my skills and contributing to innovative solutions.
+<br/>With programming and language knowledge, I am ready to tackle challenges and add value in a work environment. Count on me to drive projects forward and grow together on the technological journey.
+
+</div> </p>
             
                <div id="frase-typewriter" className="borda-frase" style={{ textAlign: 'center', height: '80px' }}>
             <p className="frase"></p>
@@ -64,27 +65,27 @@ const AboutMe = () => {
               <div className="contenedor-intereses">
                 <div className="interes">
                   <i className="fa-solid fa-gamepad"></i>
-                  <span>JOGOS</span>
+                  <span>GAMES</span>
                 </div>
                 <div className="interes">
                   <i className="fa-solid fa-headphones"></i>
-                  <span>MUSICA</span>
+                  <span>MUSIC</span>
                 </div>
                 <div className="interes">
                   <i className="fa-brands fa-bitcoin"></i>
-                  <span>CRIPTOS</span>
+                  <span>CRYPTOS</span>
                 </div>
                 <div className="interes">
                   <i className="fa-solid fa-language"></i>
-                  <span>IDIOMAS</span>
+                  <span>LANG</span>
                 </div>
                 <div className="interes">
                   <i className="fa-solid fa-plane"></i>
-                  <span>VIAJAR</span>
+                  <span>TRAVEL</span>
                 </div>
                 <div className="interes">
                   <i className="fa-solid fa-book"></i>
-                  <span>LIVROS</span>
+                  <span>BOOKS</span>
                 </div>
                 <div className="interes">
                   <i className="fa-solid fa-vr-cardboard"></i>
@@ -92,13 +93,13 @@ const AboutMe = () => {
                 </div>
                 <div className="interes">
                   <i className="fa-solid fa-camera"></i>
-                  <span>FOTOS</span>
+                  <span>PHOTOS</span>
                 </div>
               </div>
             </div>
           </div>
           <button>
-            Baixar CV <i className="fa-solid fa-download"></i>
+            Download CV <i className="fa-solid fa-download"></i>
             <span className="overlay"></span>
           </button>
         </div>

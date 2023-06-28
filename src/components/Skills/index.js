@@ -43,7 +43,7 @@ const Skills = () => {
         <div className="fila">
             
         <div className="col_linguagem" data-aos="zoom-in" data-aos-duration="2500" ata-aos-easing="ease">
-        <h3 className='titulo_linguagens'>Linguagens</h3>
+        <h3 className='titulo_linguagens'>Prog. Languages</h3>
 
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <i class="fa-brands fa-html5"></i>
@@ -104,7 +104,7 @@ const Skills = () => {
         </div>
 
         <div className="col_linguagem" data-aos="zoom-in" data-aos-duration="2500" data-aos-easing="ease">
-        <h3 className='titulo_linguagens'>Tecnologias</h3>
+        <h3 className='titulo_linguagens'>Technologies</h3>
 
              <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
              <i class="fa-brands fa-github"></i>
@@ -159,9 +159,9 @@ const Skills = () => {
         </div>
 
           <div className="col" data-aos="zoom-in" data-aos-duration="2500" data-aos-easing="ease">
-            <h3 className='titulo_idiomas'>Idiomas</h3>
+            <h3 className='titulo_idiomas'>Languages</h3>
             <div className="skill">
-              <span>Português</span>
+              <span>Portuguese</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>100%</span>
@@ -169,7 +169,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="skill">
-              <span>Espanhol</span>
+              <span>Spanish</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>100%</span>
@@ -177,7 +177,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="skill">
-              <span>Inglês*</span>
+              <span>English*</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>85%</span>
@@ -185,7 +185,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="skill">
-              <span>Italiano*</span>
+              <span>Italian*</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>40%</span>
@@ -193,7 +193,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="skill">
-              <span>Japonês*</span>
+              <span>Japanese*</span>
               <div className="barra-skill">
                 <div className="progreso">
                   <span>30%</span>
@@ -201,7 +201,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="em-andamento">
-              <span>*Em andamento</span>
+              <span>*In progress</span>
             </div>
           </div>
         </div>
