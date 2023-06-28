@@ -1,75 +1,71 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import p1 from "../../assets/image/p1_new.png";
-import p2 from "../../assets/image/p2_new.png";
-import p3 from "../../assets/image/p3_new.png";
-import p4 from "../../assets/image/p4_new.png";
-import p5 from "../../assets/image/p5_new.png";
-import p6 from "../../assets/image/p6_new.jpg";
-import p7 from "../../assets/image/p7.png";
-import p8 from "../../assets/image/p8.jpg";
-import em_breve from "../../assets/image/em_breve.jpg";
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useMediaQuery } from 'react-responsive';
+import p1 from '../../assets/image/p1_new.png';
+import p2 from '../../assets/image/p2_new.png';
+import p3 from '../../assets/image/p3_new.png';
+import p4 from '../../assets/image/p4_new.png';
+import p5 from '../../assets/image/p5_new.png';
+import p6 from '../../assets/image/p6_new.jpg';
+import p7 from '../../assets/image/p7.png';
+import p8 from '../../assets/image/p8.jpg';
+import em_breve from '../../assets/image/em_breve.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
   const portfolioRef = useRef(null);
+  const isMobile = useMediaQuery({ query: '(max-width: 700px)' });
 
   useEffect(() => {
-    const cards = portfolioRef.current.querySelectorAll(".proyecto");
+    if (!isMobile) {
+      const cards = portfolioRef.current.querySelectorAll('.proyecto');
 
-    gsap.defaults({ ease: "back" });
-    gsap.set(cards, { y: 100 });
+      gsap.defaults({ ease: 'back' });
+      gsap.set(cards, { y: 100 });
 
-    const startAnimation = () => {
-      ScrollTrigger.batch(cards, {
-        onEnter: (batch) =>
-          gsap.to(batch, {
-            opacity: 1,
-            y: 0,
-            stagger: { each: 0.2, grid: [1, 3] },
-            overwrite: true,
-          }),
-        onLeave: (batch) =>
-          gsap.set(batch, { opacity: 0, y: -100, overwrite: true }),
-        onEnterBack: (batch) =>
-          gsap.to(batch, { opacity: 1, y: 0, stagger: 0.2, overwrite: true }),
-        onLeaveBack: (batch) =>
-          gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-      });
+      const startAnimation = () => {
+        ScrollTrigger.batch(cards, {
+          onEnter: (batch) =>
+            gsap.to(batch, {
+              opacity: 1,
+              y: 0,
+              stagger: { each: 0.2, grid: [1, 3] },
+              overwrite: true,
+            }),
+          onLeave: (batch) =>
+            gsap.set(batch, { opacity: 0, y: -100, overwrite: true }),
+          onEnterBack: (batch) =>
+            gsap.to(batch, { opacity: 1, y: 0, stagger: 0.2, overwrite: true }),
+          onLeaveBack: (batch) =>
+            gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
+        });
 
-      ScrollTrigger.addEventListener("refreshInit", () =>
-        gsap.set(cards, { y: 0 })
-      );
-    };
+        ScrollTrigger.addEventListener('refreshInit', () =>
+          gsap.set(cards, { y: 0 })
+        );
+      };
 
-    const handleWindowLoad = () => {
-      startAnimation();
-    };
+      const handleWindowLoad = () => {
+        startAnimation();
+      };
 
-    if (window.innerWidth < 768) {
-      startAnimation();
-    } else {
-      window.addEventListener("load", handleWindowLoad);
+      window.addEventListener('load', handleWindowLoad);
+
+      return () => {
+        window.removeEventListener('load', handleWindowLoad);
+      };
     }
-
-    return () => {
-      window.removeEventListener("load", handleWindowLoad);
-    };
-  }, []);
+  }, [isMobile]);
 
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJETOS</h2>
         <div className="galeria" ref={portfolioRef}>
-          <div className="proyecto">
-            <a
-              href="https://github.com/GianDutra/Meu-Ignite-Feed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://github.com/GianDutra/Meu-Ignite-Feed" target="_blank" rel="noopener noreferrer">
               <img src={p1} alt="" />
             </a>
             <div className="overlay">
@@ -77,12 +73,8 @@ const Portfolio = () => {
               <p>HTML CSS Javascript React Git</p>
             </div>
           </div>
-          <div className="proyecto">
-            <a
-              href="https://github.com/GianDutra/meu_portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://github.com/GianDutra/meu_portfolio" target="_blank" rel="noopener noreferrer">
               <img src={p2} alt="" />
             </a>
             <div className="overlay">
@@ -90,7 +82,7 @@ const Portfolio = () => {
               <p>HTML CSS Javascript React Git Gsap</p>
             </div>
           </div>
-          <div className="proyecto">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a
               href="https://github.com/GianDutra/Via-Facil"
               target="_blank"
@@ -103,7 +95,7 @@ const Portfolio = () => {
               <p>HTML CSS Javascript React Git Spring MongoDB</p>
             </div>
           </div>
-          <div className="proyecto">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a
               href="https://github.com/GianDutra/ModuloCidadao"
               target="_blank"
@@ -116,7 +108,7 @@ const Portfolio = () => {
               <p>Dart Flutter Firebase Android_Studio</p>
             </div>
           </div>
-          <div className="proyecto">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a
               href="https://github.com/GianDutra/ScrapyRankingBrands"
               target="_blank"
@@ -129,7 +121,7 @@ const Portfolio = () => {
               <p>Python MongoDB Git</p>
             </div>
           </div>
-          <div className="proyecto">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a
               href="https://github.com/GianDutra/Estoque_JavaFx"
               target="_blank"
@@ -142,7 +134,7 @@ const Portfolio = () => {
               <p>Java JavaFx Git PostgreSQL</p>
             </div>
           </div>
-          <div className="proyecto">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a
               href="https://github.com/GianDutra/AI_AspiradorPo"
               target="_blank"
@@ -155,7 +147,7 @@ const Portfolio = () => {
               <p>Python Git</p>
             </div>
           </div>
-          <div className="proyecto">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a
               href="https://github.com/GianDutra/vtuber_voice"
               target="_blank"
@@ -168,7 +160,7 @@ const Portfolio = () => {
               <p>Python Selenium Git</p>
             </div>
           </div>
-          <div className="proyecto">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <img src={em_breve} alt="" />
             <div className="overlay">
               <h3>Em breve</h3>
