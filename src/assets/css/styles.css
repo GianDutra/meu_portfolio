@@ -22,8 +22,7 @@ body {
    
   }
 
-
-
+ 
 
   
 /* MENU */
@@ -549,6 +548,7 @@ body {
 .curriculum .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    overflow: hidden; 
 }
 .curriculum h2{
     font-size: 65px;
