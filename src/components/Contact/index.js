@@ -24,14 +24,14 @@ const Contact = () => {
 
     // Verifica se o nome, assunto, mensagem e pelo menos um dos campos de contato estão preenchidos
     if (from_name === '' || subject === '' || message === '' || (phone === '' && email === '')) {
-      alert('Por favor, preencha todos os campos obrigatórios. (*)');
+      alert('Please fill the required fields (*)');
       return;
     }
 
     // Verifica se o email está no formato válido usando regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email !== '' && !emailRegex.test(email)) {
-      alert('Por favor, insira um endereço de email válido.');
+      alert('Please enter a valid email address.');
       return;
     }
 
@@ -44,7 +44,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log('EMAIL ENVIADO');
+          console.log('The email has been sent');
           setName('');
           setEmail('');
           setPhone('');
@@ -52,7 +52,7 @@ const Contact = () => {
           setMessage('');
         },
         (error) => {
-          console.log('EMAIL NÃO ENVIADO');
+          console.log('The email has not been sent');
         }
       );
 

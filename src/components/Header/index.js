@@ -48,7 +48,7 @@ const Header = () => {
               <a href="#curriculum">CURRICULUM</a>
             </li>
             <li>
-              <a href="#portfolio">PORTFOLIO</a>
+              <a href="#portfolio">PROJECTS</a>
             </li>
             <li>
               <a href="#contacto">CONTACT</a>
