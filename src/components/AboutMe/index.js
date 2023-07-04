@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import aboutme from '../../assets/image/aboutme.png';
+import curriculum from '../../../src/assets/Gian_Resume.pdf'
 
 const AboutMe = () => {
   useEffect(() => {
@@ -38,6 +39,14 @@ const AboutMe = () => {
     };
   }, []);
 
+
+  
+    function handleDownload() {    
+      const link = document.createElement('a');
+      link.href = curriculum;
+      link.download = 'Gian_CV.pdf';      
+      link.click();
+    }
 
     return (
       <section id="sobremi" className="sobremi">
@@ -98,7 +107,7 @@ As a Software Engineer, I am committed to developing my skills and contributing 
               </div>
             </div>
           </div>
-          <button>
+          <button onClick={handleDownload}>
             Download CV <i className="fa-solid fa-download"></i>
             <span className="overlay"></span>
           </button>
