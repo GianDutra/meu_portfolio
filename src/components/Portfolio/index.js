@@ -11,6 +11,8 @@ import p6 from '../../assets/image/p6_new.jpg';
 import p7 from '../../assets/image/p7.png';
 import p8 from '../../assets/image/p8.jpg';
 import em_breve from '../../assets/image/em_breve.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,19 +61,41 @@ const Portfolio = () => {
     }
   }, [isMobile]);
 
+
+  const handleButtonClick = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://ignite-feed-type-script-giandutra.vercel.app/", "_blank");
+  };
+
+  
+
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <a href="https://github.com/GianDutra/Meu-Ignite-Feed" target="_blank" rel="noopener noreferrer">
-              <img src={p1} alt="" />
+            <a href="https://github.com/GianDutra/Ignite-Feed-TypeScript" target="_blank" rel="noopener noreferrer">
+              <img src={p1} alt=""  />
             </a>
             <div className="overlay">
-              <h3>Ignite Feed</h3>
-              <p>HTML CSS Javascript React Git</p>
-            </div>
+            <h3>Ignite Feed</h3>          
+            <p>HTML CSS TypeScript React Git</p>
+            <a className="button-right" href="https://ignite-feed-type-script-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Website
+                  </>
+                ) : (
+                  'Visit Website'
+                )}
+              </span>
+            </a>
+          </div>
           </div>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://github.com/GianDutra/meu_portfolio" target="_blank" rel="noopener noreferrer">
@@ -79,7 +103,7 @@ const Portfolio = () => {
             </a>
             <div className="overlay">
               <h3>My portfolio</h3>
-              <p>HTML CSS Javascript React Git Gsap</p>
+              <p>HTML CSS Javascript React Git Gsap Aos</p>
             </div>
           </div>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
