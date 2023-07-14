@@ -754,7 +754,7 @@ body {
   font-size: 0.60rem;
 }
 
-.button-right {
+.button-right_feed {
   width: 10.5rem;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
@@ -771,6 +771,22 @@ body {
   pointer-events: auto;
 }
 
+.button-right_pomodoro {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 0.15rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.3rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: rgb(2, 36, 36); 
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+}
 
 
 .portfolio .galeria .proyecto .overlay h3,
@@ -1158,7 +1174,7 @@ footer {
       position: relative;
     }
   
-    .button-right {
+    .button-right_feed {
       
       position: fixed;
       right: -2rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
@@ -1168,7 +1184,21 @@ footer {
       
     }
   
-    
+    .button-right_pomodoro {
+      
+      position: fixed;
+      right: -2rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+      margin-left: 10rem; 
+      margin-bottom: -0.55rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+      width: 6.5rem;
+      
+    }
+
+    .portfolio .galeria .proyecto .overlay .p_com_link{
+      color: #cdd1d6;
+      max-width: 225px; /* Altura máxima permitida antes do texto começar a mover para baixo */
+      font-size: 9.75px;
+    }
    
 
     .contacto  {

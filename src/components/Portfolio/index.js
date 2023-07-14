@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useMediaQuery } from 'react-responsive';
+import p0 from '../../assets/image/p0.png';
 import p1 from '../../assets/image/p1_new.png';
 import p2 from '../../assets/image/p2_new.png';
 import p3 from '../../assets/image/p3_new.png';
@@ -10,9 +11,6 @@ import p5 from '../../assets/image/p5_new.png';
 import p6 from '../../assets/image/p6_new.jpg';
 import p7 from '../../assets/image/p7.png';
 import p8 from '../../assets/image/p8.jpg';
-import em_breve from '../../assets/image/em_breve.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,7 +68,17 @@ const Portfolio = () => {
     window.open("https://ignite-feed-type-script-giandutra.vercel.app/", "_blank");
   };
 
+  const handleButtonClick2 = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
   
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://pomodoro-giandutra.vercel.app//", "_blank");
+  };
+
+  const displayText = isMobile
+  ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
+  : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
 
   return (
     <section id="portfolio" className="portfolio">
@@ -78,13 +86,33 @@ const Portfolio = () => {
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://github.com/GianDutra/Pomodoro" target="_blank" rel="noopener noreferrer">
+              <img src={p0} alt=""  />
+            </a>
+            <div className="overlay">
+            <h3>Ignite Pomodoro</h3>          
+            <p className="p_com_link">{displayText}</p>
+            <a className="button-right_pomodoro" href="https://pomodoro-giandutra.vercel.app//" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick2}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Website
+                  </>
+                ) : (
+                  'Visit Website'
+                )}
+              </span>
+            </a>
+          </div>
+          </div>
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://github.com/GianDutra/Ignite-Feed-TypeScript" target="_blank" rel="noopener noreferrer">
               <img src={p1} alt=""  />
             </a>
             <div className="overlay">
             <h3>Ignite Feed</h3>          
-            <p>HTML CSS TypeScript React Git</p>
-            <a className="button-right" href="https://ignite-feed-type-script-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick}>
+            <p>HTML CSS TypeScript React Git Vite </p>
+            <a className="button-right_feed" href="https://ignite-feed-type-script-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick}>
               <span className="visit-text">
                 {isMobile ? ( 
                   <>
@@ -182,13 +210,6 @@ const Portfolio = () => {
             <div className="overlay">
               <h3>Vtuber Voice App</h3>
               <p>Python Selenium Git</p>
-            </div>
-          </div>
-          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <img src={em_breve} alt="" />
-            <div className="overlay">
-              <h3>Coming soon</h3>
-              <p>Coming soon</p>
             </div>
           </div>
         </div>
