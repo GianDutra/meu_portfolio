@@ -11,6 +11,7 @@ import p5 from '../../assets/image/p5_new.png';
 import p6 from '../../assets/image/p6_new.jpg';
 import p7 from '../../assets/image/p7.png';
 import p8 from '../../assets/image/p8.jpg';
+import p9 from '../../assets/image/p9.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,15 +77,47 @@ const Portfolio = () => {
     window.open("https://pomodoro-giandutra.vercel.app//", "_blank");
   };
 
+  const handleButtonClickDtMoney = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://dt-money-giandutra.vercel.app/", "_blank");
+  };
+
   const displayText = isMobile
   ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
+
+  const displayTextIgniteDt = isMobile
+  ? 'TS React HookForm Axios Zod Radix Fake_REST_API Context StyledComps'
+  : 'TypeScript React Fake_REST_API Radix Axios Zod Hook_Form Context Styled_Comps';
 
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://github.com/GianDutra/DT-Money" target="_blank" rel="noopener noreferrer">
+              <img src={p9} alt=""  />
+            </a>
+            <div className="overlay">
+            <h3>Ignite DT-Money</h3>          
+            <p className="p_com_link">{displayTextIgniteDt}</p>
+            <a className="button-right_pomodoro" href="https://dt-money-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickDtMoney}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Website
+                  </>
+                ) : (
+                  'Visit Website'
+                )}
+              </span>
+            </a>
+          </div>
+          </div>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://github.com/GianDutra/Pomodoro" target="_blank" rel="noopener noreferrer">
               <img src={p0} alt=""  />
