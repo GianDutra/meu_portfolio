@@ -12,6 +12,7 @@ import p6 from '../../assets/image/p6_new.jpg';
 import p7 from '../../assets/image/p7.png';
 import p8 from '../../assets/image/p8.jpg';
 import p9 from '../../assets/image/p9.png';
+import p10 from '../../assets/image/p10.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,6 +86,14 @@ const Portfolio = () => {
     window.open("https://dt-money-giandutra.vercel.app/", "_blank");
   };
 
+  const handleButtonClickIgniteShop = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://shop-nextjs-giandutra.vercel.app/", "_blank");
+  };
+
   const displayText = isMobile
   ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
@@ -93,11 +102,35 @@ const Portfolio = () => {
   ? 'TS React HookForm Axios Zod Radix Fake_REST_API Context StyledComps'
   : 'TypeScript React Fake_REST_API Radix Axios Zod Hook_Form Context Styled_Comps';
 
+  const displayTextIgniteShop = isMobile
+  ? 'TS React NextJS Stitches Stripe'
+  : 'TypeScript React NextJS Stitches Stripe';
+
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://github.com/GianDutra/Shop-Nextjs" target="_blank" rel="noopener noreferrer">
+              <img src={p10} alt=""  />
+            </a>
+            <div className="overlay">
+            <h3>Ignite Shop</h3>          
+            <p className="p_com_link">{displayTextIgniteShop}</p>
+            <a className="button-right_feed" href="https://shop-nextjs-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickIgniteShop}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Website
+                  </>
+                ) : (
+                  'Visit Website'
+                )}
+              </span>
+            </a>
+          </div>
+        </div>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://github.com/GianDutra/DT-Money" target="_blank" rel="noopener noreferrer">
               <img src={p9} alt=""  />
