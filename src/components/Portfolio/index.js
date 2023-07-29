@@ -100,12 +100,12 @@ const Portfolio = () => {
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
 
   const displayTextIgniteDt = isMobile
-  ? 'TS React HookForm Axios Zod Radix Fake_REST_API Context StyledComps'
+  ? 'TS React HookForm Axios Zod Radix FakeRESTAPI Context StyledComps'
   : 'TypeScript React Fake_REST_API Radix Axios Zod Hook_Form Context Styled_Comps';
 
   const displayTextIgniteShop = isMobile
-  ? 'TS NextJS Stitches EmblaCarousel Stripe LoadingSkeleton'
-  : 'TypeScript React NextJS Stitches Stripe Embla_Carousel Loading_Skeleton';
+  ? 'TS NextJS Stitches EmblaCarousel Stripe LoadingSkeleton SSG'
+  : 'TypeScript React NextJS Stitches Stripe SSG Embla_Carousel Loading_Skeleton';
 
   return (
     <section id="portfolio" className="portfolio">

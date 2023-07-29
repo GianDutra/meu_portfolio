@@ -1228,6 +1228,7 @@ footer {
         overflow: hidden; /* Adicione esta linha para ocultar o conteúdo excedente */
         height: auto; /* Altere a altura para auto */
         border: none;
+        
       }
     
       .contacto .fila .col {
@@ -1236,10 +1237,19 @@ footer {
       }
     
       .contacto .col img {
+        padding-top: 10px;
         display: block;
         margin: auto;
         max-width: 100%; /* Adicione esta linha para limitar o tamanho máximo da imagem */
         height: auto; /* Adicione esta linha para ajustar a altura automaticamente */
+      }
+
+      .contacto h3 {
+        padding-top: 55px;
+      }
+
+      .contacto p {
+        margin-top: 5px;
       }
     
       .contacto .fila .col {
