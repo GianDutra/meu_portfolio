@@ -13,6 +13,7 @@ import p7 from '../../assets/image/p7.png';
 import p8 from '../../assets/image/p8.jpg';
 import p9 from '../../assets/image/p9.png';
 import p10 from '../../assets/image/p10.png';
+import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,7 +92,7 @@ const Portfolio = () => {
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
   
     // Coloque aqui a lógica de redirecionamento para o link desejado
-    window.open("https://shop-nextjs-giandutra.vercel.app/", "_blank");
+    window.open("https://shop-nextjs-2-giandutra.vercel.app/", "_blank");
   };
 
   const displayText = isMobile
@@ -103,8 +104,8 @@ const Portfolio = () => {
   : 'TypeScript React Fake_REST_API Radix Axios Zod Hook_Form Context Styled_Comps';
 
   const displayTextIgniteShop = isMobile
-  ? 'TS React NextJS Stitches Stripe'
-  : 'TypeScript React NextJS Stitches Stripe';
+  ? 'TS NextJS Stitches EmblaCarousel Stripe LoadingSkeleton'
+  : 'TypeScript React NextJS Stitches Stripe Embla_Carousel Loading_Skeleton';
 
   return (
     <section id="portfolio" className="portfolio">
@@ -112,13 +113,13 @@ const Portfolio = () => {
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <a href="https://github.com/GianDutra/Shop-Nextjs" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/GianDutra/Shop-Nextjs-Challenge" target="_blank" rel="noopener noreferrer">
               <img src={p10} alt=""  />
             </a>
             <div className="overlay">
             <h3>Ignite Shop</h3>          
             <p className="p_com_link">{displayTextIgniteShop}</p>
-            <a className="button-right_feed" href="https://shop-nextjs-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickIgniteShop}>
+            <a className="button-right_shop" href="https://shop-nextjs-2-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickIgniteShop}>
               <span className="visit-text">
                 {isMobile ? ( 
                   <>
@@ -276,6 +277,15 @@ const Portfolio = () => {
             <div className="overlay">
               <h3>Vtuber Voice App</h3>
               <p>Python Selenium Git</p>
+            </div>
+          </div>
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+
+              <img src={comingSoon} alt="" />
+
+            <div className="overlay">
+              <h3>Coming Soon</h3>
+              <p>Coming Soon</p>
             </div>
           </div>
         </div>

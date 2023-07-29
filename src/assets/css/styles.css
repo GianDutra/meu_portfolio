@@ -760,15 +760,34 @@ body {
   padding-right: 0.3rem;
   position: fixed;
   bottom: 10px;
-  right: 3.5rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  right: 3.55rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
   margin-left: 10rem; 
-  margin-bottom: 0.60rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-bottom: 0.55rem; /* Aqui é para ajustar a distância vertical do texto H2*/
   margin-right: 1.5rem; 
   z-index: 3;
-  background-color: rgb(2, 36, 36); 
+  background-color: none;
   color:rgb(132,152,159);
   scale: 60%;
   pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_shop {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 3.4rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.2rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none; 
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
 }
 
 .button-right_pomodoro {
@@ -779,13 +798,14 @@ body {
   bottom: 10px;
   right: 0.15rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
   margin-left: 10rem; 
-  margin-bottom: 1.3rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-bottom: 1.2rem; /* Aqui é para ajustar a distância vertical do texto H2*/
   margin-right: 1.5rem; 
   z-index: 3;
-  background-color: rgb(2, 36, 36); 
+  background-color: none;
   color:rgb(132,152,159);
   scale: 60%;
   pointer-events: auto;
+  font-weight: bold;
 }
 
 
@@ -1174,17 +1194,9 @@ footer {
       position: relative;
     }
   
-    .button-right_feed {
-      
-      position: fixed;
-      right: -2rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
-      margin-left: 10rem; 
-      margin-bottom: -0.55rem; /* Aqui é para ajustar a distância vertical do texto H2*/
-      width: 6.5rem;
-      
-    }
-  
-    .button-right_pomodoro {
+    .button-right_feed,
+    .button-right_pomodoro,
+    .button-right_shop {
       
       position: fixed;
       right: -2rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
