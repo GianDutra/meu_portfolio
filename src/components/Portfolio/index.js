@@ -13,7 +13,8 @@ import p7 from '../../assets/image/p7.png';
 import p8 from '../../assets/image/p8.jpg';
 import p9 from '../../assets/image/p9.png';
 import p10 from '../../assets/image/p10.png';
-import comingSoon from '../../assets/image/coming-soon.png'
+import p11 from '../../assets/image/p11.png';
+ /*import comingSoon from '../../assets/image/coming-soon.png'*/
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +69,7 @@ const Portfolio = () => {
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
   
     // Coloque aqui a lógica de redirecionamento para o link desejado
-    window.open("https://ignite-feed-type-script-giandutra.vercel.app/", "_blank");
+    window.open("https://github.com/GianDutra/Ignite-Feed-TypeScript", "_blank");
   };
 
   const handleButtonClick2 = (event) => {
@@ -76,7 +77,7 @@ const Portfolio = () => {
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
   
     // Coloque aqui a lógica de redirecionamento para o link desejado
-    window.open("https://pomodoro-giandutra.vercel.app//", "_blank");
+    window.open("https://github.com/GianDutra/Pomodoro", "_blank");
   };
 
   const handleButtonClickDtMoney = (event) => {
@@ -84,7 +85,7 @@ const Portfolio = () => {
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
   
     // Coloque aqui a lógica de redirecionamento para o link desejado
-    window.open("https://dt-money-giandutra.vercel.app/", "_blank");
+    window.open("https://github.com/GianDutra/DT-Money", "_blank");
   };
 
   const handleButtonClickIgniteShop = (event) => {
@@ -92,10 +93,19 @@ const Portfolio = () => {
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
   
     // Coloque aqui a lógica de redirecionamento para o link desejado
-    window.open("https://shop-nextjs-2-giandutra.vercel.app/", "_blank");
+    window.open("https://github.com/GianDutra/Shop-Nextjs-Challenge", "_blank");
   };
 
-  const displayText = isMobile
+
+  const handleButtonClickCoffee = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://github.com/GianDutra/Coffee-delivery", "_blank");
+  };
+
+  const displayTextPomodoro = isMobile
   ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
 
@@ -104,8 +114,12 @@ const Portfolio = () => {
   : 'TypeScript React Fake_REST_API Radix Axios Zod Hook_Form Context Styled_Comps';
 
   const displayTextIgniteShop = isMobile
-  ? 'TS NextJS Stitches EmblaCarousel Stripe LoadingSkeleton SSG'
-  : 'TypeScript React NextJS Stitches Stripe SSG Embla_Carousel Loading_Skeleton';
+  ? 'TS NextJS Stitches EmblaCarousel Stripe LoadingSkeleton SSG SSR'
+  : 'TypeScript React NextJS Stitches Stripe SSG SSR Embla_Carousel Loading_Skeleton';
+
+  const displayTextCoffee = isMobile
+  ? 'TS React API StyledComponents HookForm Zod Axios Immer'
+  : 'TypeScript React API Styled_Components Hook_Form Zod Axios Immer';
 
   return (
     <section id="portfolio" className="portfolio">
@@ -113,80 +127,100 @@ const Portfolio = () => {
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <a href="https://github.com/GianDutra/Shop-Nextjs-Challenge" target="_blank" rel="noopener noreferrer">
+            <a href="https://coffee-delivery-ashen-chi.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img src={p11} alt=""  />
+            </a>
+            <div className="overlayCoffee">
+            <h3>Coffee Delivery</h3>          
+            <p className="p_com_link">{displayTextCoffee}</p>
+            <a className="button-right_coffee" href="https://github.com/GianDutra/Coffee-delivery" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickCoffee}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Github
+                  </>
+                ) : (
+                  'Visit Github'
+                )}
+              </span>
+            </a>
+          </div>
+          </div>
+        <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://shop-nextjs-2-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src={p10} alt=""  />
             </a>
             <div className="overlay">
             <h3>Ignite Shop</h3>          
             <p className="p_com_link">{displayTextIgniteShop}</p>
-            <a className="button-right_shop" href="https://shop-nextjs-2-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickIgniteShop}>
+            <a className="button-right_shop" href="https://github.com/GianDutra/Shop-Nextjs-Challenge" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickIgniteShop}>
               <span className="visit-text">
                 {isMobile ? ( 
                   <>
-                  Visit Website
+                  Visit Github
                   </>
                 ) : (
-                  'Visit Website'
+                  'Visit Github'
                 )}
               </span>
             </a>
           </div>
         </div>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <a href="https://github.com/GianDutra/DT-Money" target="_blank" rel="noopener noreferrer">
+            <a href="https://dt-money-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src={p9} alt=""  />
             </a>
             <div className="overlay">
             <h3>Ignite DT-Money</h3>          
             <p className="p_com_link">{displayTextIgniteDt}</p>
-            <a className="button-right_pomodoro" href="https://dt-money-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickDtMoney}>
+            <a className="button-right_pomodoro" href="https://github.com/GianDutra/DT-Money" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickDtMoney}>
               <span className="visit-text">
                 {isMobile ? ( 
                   <>
-                  Visit Website
+                  Visit Github
                   </>
                 ) : (
-                  'Visit Website'
+                  'Visit Github'
                 )}
               </span>
             </a>
           </div>
           </div>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <a href="https://github.com/GianDutra/Pomodoro" target="_blank" rel="noopener noreferrer">
+            <a href="https://pomodoro-giandutra.vercel.app//" target="_blank" rel="noopener noreferrer">
               <img src={p0} alt=""  />
             </a>
             <div className="overlay">
             <h3>Ignite Pomodoro</h3>          
-            <p className="p_com_link">{displayText}</p>
-            <a className="button-right_pomodoro" href="https://pomodoro-giandutra.vercel.app//" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick2}>
+            <p className="p_com_link">{displayTextPomodoro}</p>
+            <a className="button-right_pomodoro" href="https://github.com/GianDutra/Pomodoro" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick2}>
               <span className="visit-text">
                 {isMobile ? ( 
                   <>
-                  Visit Website
+                  Visit Github
                   </>
                 ) : (
-                  'Visit Website'
+                  'Visit Github'
                 )}
               </span>
             </a>
           </div>
           </div>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <a href="https://github.com/GianDutra/Ignite-Feed-TypeScript" target="_blank" rel="noopener noreferrer">
+            <a href="https://ignite-feed-type-script-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src={p1} alt=""  />
             </a>
             <div className="overlay">
             <h3>Ignite Feed</h3>          
             <p>HTML CSS TypeScript React Git Vite </p>
-            <a className="button-right_feed" href="https://ignite-feed-type-script-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick}>
+            <a className="button-right_feed" href="https://github.com/GianDutra/Ignite-Feed-TypeScript" target="_blank" rel="noopener noreferrer" onClick={handleButtonClick}>
               <span className="visit-text">
                 {isMobile ? ( 
                   <>
-                  Visit Website
+                  Visit Github
                   </>
                 ) : (
-                  'Visit Website'
+                  'Visit Github'
                 )}
               </span>
             </a>
@@ -279,7 +313,7 @@ const Portfolio = () => {
               <p>Python Selenium Git</p>
             </div>
           </div>
-          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+    {/*      <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
 
               <img src={comingSoon} alt="" />
 
@@ -287,9 +321,9 @@ const Portfolio = () => {
               <h3>Coming Soon</h3>
               <p>Coming Soon</p>
             </div>
-          </div>
-        </div>
-      </div>
+          </div>*/}
+                </div> 
+      </div> 
     </section>
   );
 };
