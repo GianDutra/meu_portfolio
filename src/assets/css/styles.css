@@ -703,6 +703,16 @@ body {
   z-index: 1; /* Ajustando o z-index para que a imagem fique acima da borda */
 }
 
+
+.portfolio .galeria .proyecto .CoffeeImg{
+  width: 100%;
+  display: block;
+  transition: transform 0.6s, margin 0.6s;
+  margin: -20px 0 20px -22.2px; /* Ajustando as margens */
+  position: relative; /* Adicionando position: relative */
+  z-index: 1; /* Ajustando o z-index para que a imagem fique acima da borda */
+}
+
 .portfolio .galeria .proyecto img:hover {
   width: 100%;
   display: block;
@@ -788,6 +798,24 @@ body {
 .portfolio .galeria .proyecto .overlayCoffee p {
   color: #cdd1d6;
   font-size: 0.60rem;
+}
+
+.button-right_portfolio {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 3.05rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 0.50rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
 }
 
 .button-right_feed {
@@ -1252,6 +1280,10 @@ footer {
       width: 100%;
       margin: 0;
     }
+    .portfolio .galeria .proyecto .CoffeeImg {
+      width: 100%;
+      margin: 0;
+    }
     .portfolio .galeria .proyecto .overlay h3 {
       font-size: 1.3rem;
     }
@@ -1272,7 +1304,8 @@ footer {
     .button-right_feed,
     .button-right_pomodoro,
     .button-right_shop,
-    .button-right_coffee {
+    .button-right_coffee,
+    .button-right_portfolio {
       
       position: fixed;
       right: -2rem; /* Aqui é para ajustar a distância horizontal do texto H2*/

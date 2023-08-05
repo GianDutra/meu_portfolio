@@ -105,6 +105,14 @@ const Portfolio = () => {
     window.open("https://github.com/GianDutra/Coffee-delivery", "_blank");
   };
 
+  const handleButtonClickPortfolio = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://github.com/GianDutra/meu_portfolio", "_blank");
+  };
+
   const displayTextPomodoro = isMobile
   ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
@@ -121,6 +129,11 @@ const Portfolio = () => {
   ? 'TS React API StyledComponents HookForm Zod Axios Immer'
   : 'TypeScript React API Styled_Components Hook_Form Zod Axios Immer';
 
+
+  const displayTextPortfolio = isMobile
+  ? 'HTML CSS JS React Git Gsap Aos'
+  : 'HTML CSS Javascript React Git Gsap Aos';
+
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
@@ -128,7 +141,7 @@ const Portfolio = () => {
         <div className="galeria" ref={portfolioRef}>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://coffee-delivery-ashen-chi.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <img src={p11} alt=""  />
+              <img className="CoffeeImg" src={p11} alt=""  />
             </a>
             <div className="overlayCoffee">
             <h3>Coffee Delivery</h3>          
@@ -227,13 +240,24 @@ const Portfolio = () => {
           </div>
           </div>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
-            <a href="https://github.com/GianDutra/meu_portfolio" target="_blank" rel="noopener noreferrer">
-              <img src={p2} alt="" />
+            <a href="https://meu-portfolio-giandutra.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img src={p2} alt=""  />
             </a>
             <div className="overlay">
-              <h3>My portfolio</h3>
-              <p>HTML CSS Javascript React Git Gsap Aos</p>
-            </div>
+            <h3>My portfolio</h3>          
+            <p className="p_com_link">{displayTextPortfolio}</p>
+            <a className="button-right_portfolio" href="https://github.com/GianDutra/meu_portfolio" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickPortfolio}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Github
+                  </>
+                ) : (
+                  'Visit Github'
+                )}
+              </span>
+            </a>
+          </div>
           </div>
           <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a
