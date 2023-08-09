@@ -117,6 +117,16 @@ const Skills = () => {
             </div>
 
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <i class="fa-solid fa-wind"></i>
+                <span className="text">Tailwind</span>
+            </div>
+
+            <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <i class="fa-solid fa-n"></i>
+                <span className="text">NextJS</span>
+            </div>
+
+            <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <i class="fa-brands fa-docker"></i>
                 <span className="text">Docker</span>
             </div>

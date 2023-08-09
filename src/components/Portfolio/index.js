@@ -14,6 +14,7 @@ import p8 from '../../assets/image/p8.jpg';
 import p9 from '../../assets/image/p9.png';
 import p10 from '../../assets/image/p10.png';
 import p11 from '../../assets/image/p11.png';
+import p12 from '../../assets/image/p12.png';
  /*import comingSoon from '../../assets/image/coming-soon.png'*/
 
 gsap.registerPlugin(ScrollTrigger);
@@ -113,6 +114,14 @@ const Portfolio = () => {
     window.open("https://github.com/GianDutra/meu_portfolio", "_blank");
   };
 
+  const handleButtonClickTailwindForm = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://github.com/GianDutra/tailwind-nextjs", "_blank");
+  };
+
   const displayTextPomodoro = isMobile
   ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
@@ -134,6 +143,11 @@ const Portfolio = () => {
   ? 'HTML CSS JS React Git Gsap Aos'
   : 'HTML CSS Javascript React Git Gsap Aos';
 
+  const displayTextTailwindForm = isMobile
+  ? 'TS NextJS Tailwind Radix LucideIcon FramerMotion '
+  : 'TypeScript NextJS Radix Tailwind Framer_Motion Lucide_Icon';
+
+  
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
@@ -147,6 +161,26 @@ const Portfolio = () => {
             <h3>Coffee Delivery</h3>          
             <p className="p_com_link">{displayTextCoffee}</p>
             <a className="button-right_coffee" href="https://github.com/GianDutra/Coffee-delivery" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickCoffee}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Github
+                  </>
+                ) : (
+                  'Visit Github'
+                )}
+              </span>
+            </a>
+          </div>
+          </div>
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://tailwind-nextjs-sable.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img src={p12} alt=""  />
+            </a>
+            <div className="overlayCoffee">
+            <h3>Tailwind Form</h3>          
+            <p className="p_com_link">{displayTextTailwindForm}</p>
+            <a className="button-right_TailwindForm" href="https://github.com/GianDutra/tailwind-nextjs" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickTailwindForm}>
               <span className="visit-text">
                 {isMobile ? ( 
                   <>
