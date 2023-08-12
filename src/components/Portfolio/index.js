@@ -15,7 +15,8 @@ import p9 from '../../assets/image/p9.png';
 import p10 from '../../assets/image/p10.png';
 import p11 from '../../assets/image/p11.png';
 import p12 from '../../assets/image/p12.png';
- /*import comingSoon from '../../assets/image/coming-soon.png'*/
+import p13 from '../../assets/image/p13.png';
+import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,6 +123,15 @@ const Portfolio = () => {
     window.open("https://github.com/GianDutra/tailwind-nextjs", "_blank");
   };
 
+  const handleButtonClickDesignSystem = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://github.com/GianDutra/my-design-system", "_blank");
+  };
+
+  
   const displayTextPomodoro = isMobile
   ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
@@ -147,12 +157,35 @@ const Portfolio = () => {
   ? 'TS NextJS Tailwind Radix LucideIcon FramerMotion '
   : 'TypeScript NextJS Radix Tailwind Framer_Motion Lucide_Icon';
 
+  const displayDesignSystem = isMobile
+  ? 'Storybook TurboRepo React Stitches PhosphorIcons RadixUI '
+  : 'Storybook TurboRepo React Stitches RadixUI Phosphor_Icons';
   
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://giandutra.github.io/my-design-system/?path=/story/home--page" target="_blank" rel="noopener noreferrer">
+              <img src={p13} alt=""  />
+            </a>
+            <div className="overlayCoffee">
+            <h3>Design System</h3>          
+            <p className="p_com_link">{displayDesignSystem}</p>
+            <a className="button-right_DesignSystem" href="https://github.com/GianDutra/my-design-system" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickDesignSystem}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Github
+                  </>
+                ) : (
+                  'Visit Github'
+                )}
+              </span>
+            </a>
+          </div>
+          </div>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://coffee-delivery-ashen-chi.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img className="CoffeeImg" src={p11} alt=""  />
@@ -371,7 +404,7 @@ const Portfolio = () => {
               <p>Python Selenium Git</p>
             </div>
           </div>
-    {/*      <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
 
               <img src={comingSoon} alt="" />
 
@@ -379,7 +412,7 @@ const Portfolio = () => {
               <h3>Coming Soon</h3>
               <p>Coming Soon</p>
             </div>
-          </div>*/}
+          </div>
                 </div> 
       </div> 
     </section>
