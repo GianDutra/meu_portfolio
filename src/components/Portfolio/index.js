@@ -170,7 +170,7 @@ const Portfolio = () => {
             <a href="https://giandutra.github.io/my-design-system/?path=/story/home--page" target="_blank" rel="noopener noreferrer">
               <img src={p13} alt=""  />
             </a>
-            <div className="overlayCoffee">
+            <div className="overlay">
             <h3>Design System</h3>          
             <p className="p_com_link">{displayDesignSystem}</p>
             <a className="button-right_DesignSystem" href="https://github.com/GianDutra/my-design-system" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickDesignSystem}>
