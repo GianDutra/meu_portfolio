@@ -158,8 +158,8 @@ const Portfolio = () => {
   : 'TypeScript NextJS Radix Tailwind Framer_Motion Lucide_Icon';
 
   const displayDesignSystem = isMobile
-  ? 'Storybook Monorepo React Stitches TurboRepo PhosphorIcons RadixUI '
-  : 'Storybook Monorepo TurboRepo React Stitches RadixUI Phosphor_Icons';
+  ? 'TS Storybook Monorepo Radix React Stitches TurboRepo PhosphorIcons '
+  : 'TypeScript Storybook Monorepo TurboRepo React Stitches RadixUI Phosphor_Icons';
   
   return (
     <section id="portfolio" className="portfolio">
