@@ -12,6 +12,7 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const formRef = useRef(null);
   const [contactRef, inView] = useInView({ triggerOnce: true });
+  const [isSending, setIsSending] = useState(false);
 
   useEffect(() => {
     if (inView) {
@@ -35,6 +36,8 @@ const Contact = () => {
       return;
     }
 
+    setIsSending(true);
+
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -54,7 +57,10 @@ const Contact = () => {
         (error) => {
           console.log('The email has not been sent');
         }
-      );
+      )
+      .finally(() => {
+        setIsSending(false);
+      });
 
     e.target.reset();
   };
@@ -109,8 +115,8 @@ const Contact = () => {
                   name="message"
                 ></textarea>
               </div>
-              <button type="submit">
-                Submit <i className="fa-solid fa-paper-plane"></i>
+              <button type="submit" disabled={isSending}>
+              Submit <i className="fa-solid fa-paper-plane"></i>
                 <span className="overlay"></span>
               </button>
             </form>
