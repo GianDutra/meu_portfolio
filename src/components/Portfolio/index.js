@@ -16,7 +16,8 @@ import p10 from '../../assets/image/p10.png';
 import p11 from '../../assets/image/p11.png';
 import p12 from '../../assets/image/p12.png';
 import p13 from '../../assets/image/p13.png';
-import comingSoon from '../../assets/image/coming-soon.png'
+import p14 from '../../assets/image/p14.png';
+// import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -130,8 +131,14 @@ const Portfolio = () => {
     // Coloque aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/my-design-system", "_blank");
   };
-
   
+  const handleButtonClickIgniteCall = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+  
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://github.com/GianDutra/ignite-call", "_blank");
+  };
   const displayTextPomodoro = isMobile
   ? 'TS React Router Context Immer Zod Reducer StyledComps HookForm'
   : 'TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod';
@@ -161,11 +168,36 @@ const Portfolio = () => {
   ? 'TS Storybook Monorepo Radix React Stitches TurboRepo PhosphorIcons '
   : 'TypeScript Storybook Monorepo TurboRepo React Stitches RadixUI Phosphor_Icons';
   
+  
+  const displayTextIgniteCall = isMobile
+  ? 'TS NextJs Prisma MySQL ReactQuery GoogleAPI Stitches Axios Zod DayJS'
+  : 'TypeScript NextJs Prisma MySQL GoogleAPI Zod PlanetScale Stitches ReactQuery DayJS Axios';
+
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://ignite-call-giandutra.vercel.app" target="_blank" rel="noopener noreferrer">
+              <img className="CoffeeImg" src={p14} alt=""  />
+            </a>
+            <div className="overlay">
+            <h3>Ignite Call</h3>          
+            <p className="p_com_link">{displayTextIgniteCall}</p>
+            <a className="button-right_igniteCall" href="https://github.com/GianDutra/ignite-call" target="_blank" rel="noopener noreferrer" onClick={handleButtonClickIgniteCall}>
+              <span className="visit-text">
+                {isMobile ? ( 
+                  <>
+                  Visit Github
+                  </>
+                ) : (
+                  'Visit Github'
+                )}
+              </span>
+            </a>
+          </div>
+          </div>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://giandutra.github.io/my-design-system/?path=/story/home--page" target="_blank" rel="noopener noreferrer">
               <img src={p13} alt=""  />
@@ -404,7 +436,7 @@ const Portfolio = () => {
               <p>Python Selenium Git</p>
             </div>
           </div>
-          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+           {/* <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
 
               <img src={comingSoon} alt="" />
 
@@ -412,7 +444,7 @@ const Portfolio = () => {
               <h3>Coming Soon</h3>
               <p>Coming Soon</p>
             </div>
-          </div>
+          </div>*/}
                 </div> 
       </div> 
     </section>
