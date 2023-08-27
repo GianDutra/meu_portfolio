@@ -17,6 +17,7 @@ import p11 from '../../assets/image/p11.png';
 import p12 from '../../assets/image/p12.png';
 import p13 from '../../assets/image/p13.png';
 import p14 from '../../assets/image/p14.png';
+import p15 from '../../assets/image/p15.png';
 // import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -173,11 +174,25 @@ const Portfolio = () => {
   ? 'TS NextJs Prisma MySQL ReactQuery GoogleAPI Stitches Axios Zod DayJS'
   : 'TypeScript NextJs Prisma MySQL GoogleAPI Zod PlanetScale Stitches ReactQuery DayJS Axios';
 
+  const displayTextVideoAI = isMobile
+  ? 'JS NodeJS Express Cors YoutubeAPI Axios ffmpeg WhisperAI'
+  : 'JavaScript NodeJS Express Cors Axios nytdl-core ffmpeg transformers.JS WhisperAI YoutubeAPI'
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+            <a href="https://github.com/GianDutra/video-transcription-with-AI" target="_blank" rel="noopener noreferrer">
+              <img src={p15} alt=""  />
+            </a>
+            <div className="overlay">
+            <h3>Video Transcription AI</h3>          
+            <p className="p_com_link">{displayTextVideoAI}</p>
+              <span className="visit-text">
+              </span>
+          </div>
+        </div>
         <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
             <a href="https://ignite-call-giandutra.vercel.app" target="_blank" rel="noopener noreferrer">
               <img className="CoffeeImg" src={p14} alt=""  />
