@@ -19,6 +19,7 @@ import p13 from "../../assets/image/p13.png";
 import p14 from "../../assets/image/p14.png";
 import p15 from "../../assets/image/p15.png";
 import p16 from "../../assets/image/p16.png";
+import p17 from "../../assets/image/p17.png";
 // import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -142,13 +143,22 @@ const Portfolio = () => {
     // Coloque aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/ignite-call", "_blank");
   };
+
+  const handleButtonClickReduxZustand = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    event.stopPropagation(); // Impede a propagação do evento para o elemento pai
+
+    // Coloque aqui a lógica de redirecionamento para o link desejado
+    window.open("https://github.com/GianDutra/ignite_redux_zustand", "_blank");
+  };
+  
   const displayTextPomodoro = isMobile
     ? "TS React Router Context Immer Zod Reducer StyledComps HookForm"
     : "TypeScript React Router Context Reducer Immer Styled_Components Hook_Form Zod";
 
   const displayTextIgniteDt = isMobile
-    ? "TS React HookForm Axios Zod Radix FakeRESTAPI Context StyledComps"
-    : "TypeScript React Fake_REST_API Radix Axios Zod Hook_Form Context Styled_Comps";
+    ? "TS React HookForm Axios Zod Radix Json_Server Context StyledComps"
+    : "TypeScript React Json_Server Radix Axios Zod Hook_Form Context Styled_Comps";
 
   const displayTextIgniteShop = isMobile
     ? "TS NextJS Stitches EmblaCarousel Stripe LoadingSkeleton SSG SSR"
@@ -182,12 +192,44 @@ const Portfolio = () => {
     ? "TS NextJS React OpenAI Tailwind Lucid Prismjs Simple_Code_Editor"
     : "TypeScript NextJS React OpenAI Lucide_Icon TailWind Prismjs Simple_Code_Editor"
 
+  const displayTextReduxZustand = isMobile
+    ? "TS React Radix ReduxToolkit Thunk Zustand Vitest JSONServer TailWind"
+    : "TypeScript React Redux_Toolkit Thunk Zustand Vitest Axios JSON_Server TailWind Radix"
 
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
+              href="https://ignite-redux-zustand-three.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="ReduxAndZustandProjectImg" src={p17} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Module Video Player</h3>
+              <p className="p_com_link">{displayTextReduxZustand}</p>
+              <a
+                className="button-right_reduxZustand"
+                href="https://github.com/GianDutra/ignite_redux_zustand"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleButtonClickReduxZustand}
+              >
+                <span className="visit-text">
+                  {isMobile ? <>Visit Github</> : "Visit Github"}
+                </span>
+              </a>
+            </div>
+          </div>
           <div
             className="proyecto"
             data-aos={isMobile ? "fade-up" : ""}

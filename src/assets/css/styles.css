@@ -944,6 +944,23 @@ body {
   font-weight: bold;
 }
 
+.button-right_reduxZustand {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: -2.20rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
 .portfolio .galeria .proyecto .overlay h3,
 .portfolio .galeria .proyecto .overlay p {
   letter-spacing: 0.1rem;
@@ -1361,7 +1378,8 @@ footer {
     .button-right_portfolio,
     .button-right_TailwindForm,
     .button-right_DesignSystem,
-    .button-right_igniteCall {
+    .button-right_igniteCall,
+    .button-right_reduxZustand {
       
       position: fixed;
       right: -2rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
