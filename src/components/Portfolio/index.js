@@ -189,8 +189,8 @@ const Portfolio = () => {
     : "JavaScript NodeJS Express Cors Axios nytdl-core ffmpeg transformers.JS WhisperAI YoutubeAPI";
 
   const displayTextAISQL = isMobile
-    ? "TS NextJS React OpenAI Tailwind Lucid Prismjs Simple_Code_Editor"
-    : "TypeScript NextJS React OpenAI Lucide_Icon TailWind Prismjs Simple_Code_Editor"
+    ? "TS NextJS React OpenAI Tailwind Prismjs Simple_Code_Editor  GPT"
+    : "TypeScript NextJS React OpenAI GPT Lucide_Icon TailWind Prismjs Simple_Code_Editor"
 
   const displayTextReduxZustand = isMobile
     ? "TS React Radix ReduxToolkit Thunk Zustand Vitest JSONServer TailWind"
