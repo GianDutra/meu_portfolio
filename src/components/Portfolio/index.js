@@ -173,8 +173,8 @@ const Portfolio = () => {
     : "HTML CSS Javascript React Git Gsap Aos";
 
   const displayTextTailwindForm = isMobile
-    ? "TS NextJS Tailwind Radix LucideIcon FramerMotion "
-    : "TypeScript NextJS Radix Tailwind Framer_Motion Lucide_Icon";
+    ? "TS NextJS Tailwind Radix DarkMode Lucide FramerMotion AutoAnimate"
+    : "TypeScript NextJS Radix Tailwind Framer_Motion Lucide_Icon Auto_Animate Next_themes";
 
   const displayDesignSystem = isMobile
     ? "TS Storybook Monorepo Radix React Stitches TurboRepo PhosphorIcons "
