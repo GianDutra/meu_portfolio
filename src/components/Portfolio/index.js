@@ -20,6 +20,7 @@ import p14 from "../../assets/image/p14.png";
 import p15 from "../../assets/image/p15.png";
 import p16 from "../../assets/image/p16.png";
 import p17 from "../../assets/image/p17.png";
+import p18 from "../../assets/image/p18.png";
 // import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -201,6 +202,25 @@ const Portfolio = () => {
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
+              href="https://github.com/GianDutra/TasksAPI-Challenge"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p18} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>TaskAPI Node.js</h3>
+              <p>JavaScript Node.js CSV</p>
+            </div>
+          </div>
+
         <div
             className="proyecto"
             data-aos={isMobile ? "fade-up" : ""}
