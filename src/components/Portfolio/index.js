@@ -21,6 +21,8 @@ import p15 from "../../assets/image/p15.png";
 import p16 from "../../assets/image/p16.png";
 import p17 from "../../assets/image/p17.png";
 import p18 from "../../assets/image/p18.png";
+import p19 from "../../assets/image/p19.png";
+import p20 from "../../assets/image/p20.png";
 // import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -196,6 +198,15 @@ const Portfolio = () => {
   const displayTextReduxZustand = isMobile
     ? "TS React Radix ReduxToolkit Thunk Zustand Vitest JSONServer TailWind"
     : "TypeScript React Redux_Toolkit Thunk Zustand Vitest Axios JSON_Server TailWind Radix"
+    
+
+  const displayTextTransactionsRestAPI = isMobile
+  ? "TS Node.js Fastify Fastify-Cookie Knex Zod Vitest Supertest Sqlite PostgreSQL Render"
+  : "TypeScript Node.js Fastify Fastify-Cookie Knex Zod Vitest Supertest Sqlite PostgreSQL Render"
+
+  const displayTextDailyDietAPI = isMobile
+  ? "TS Node.js Fastify Fastify-Cookie Knex Zod Vitest Supertest Sqlite PostgreSQL"
+  : "TypeScript Node.js Fastify Fastify-Cookie Knex Zod Vitest Supertest Sqlite PostgreSQL"
 
   return (
     <section id="portfolio" className="portfolio">
@@ -209,15 +220,51 @@ const Portfolio = () => {
             data-aos-easing="ease"
           >
             <a
+              href="https://github.com/GianDutra/Daily-Diet-API"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p19} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Daily Diet API</h3>
+              <p className="p">{displayTextDailyDietAPI}</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
+              href="https://github.com/GianDutra/Transactions_RestAPI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p20} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Transactions RestAPI</h3>
+              <p className="p">{displayTextTransactionsRestAPI}</p>
+            </div>
+          </div>
+        <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
               href="https://github.com/GianDutra/TasksAPI-Challenge"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={p18} alt="" />
             </a>
-            <div className="overlay">
+            <div className="overlayCoffee">
               <h3>TaskAPI Node.js</h3>
-              <p>JavaScript Node.js CSV</p>
+              <p className="p">{displayTextReduxZustand}</p>
             </div>
           </div>
 
