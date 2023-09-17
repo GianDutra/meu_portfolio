@@ -23,7 +23,9 @@ import p17 from "../../assets/image/p17.png";
 import p18 from "../../assets/image/p18.png";
 import p19 from "../../assets/image/p19.png";
 import p20 from "../../assets/image/p20.png";
-// import comingSoon from '../../assets/image/coming-soon.png'
+import p21 from "../../assets/image/p21.png";
+import p22 from "../../assets/image/p22.png";
+import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -207,12 +209,56 @@ const Portfolio = () => {
   const displayTextDailyDietAPI = isMobile
   ? "TS Node.js Fastify Fastify-Cookie Knex Zod Vitest Supertest Sqlite PostgreSQL"
   : "TypeScript Node.js Fastify Fastify-Cookie Knex Zod Vitest Supertest Sqlite PostgreSQL"
+  
+  const displayTextGymPassAPI = isMobile
+  ? "TS Node.js Fastify JWT Cookie Prisma Bcryptjs Dayjs Zod Vitest PostgreSQL"
+  : "TypeScript Node.js Fastify JWT Cookie Prisma Bcryptjs Dayjs Zod Vitest Supertest PostgreSQL"
+  
+  const displayTextUploadAI = isMobile
+  ? "TS Node.js React Tailwind WhisperAI ChatGPT OpenAI Shadcn Fastify Prisma WebAssembly"
+  : "TypeScript Node React Tailwind WhisperAI ChatGPT OpenAI Shadcn Fastify Prisma WebAssembly"
 
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
         <h2>PROJECTS</h2>
         <div className="galeria" ref={portfolioRef}>
+        <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
+              href="https://github.com/GianDutra/Upload.ai_front_end"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p22} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Upload.AI</h3>
+              <p className="p">{displayTextUploadAI}</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
+              href="https://github.com/GianDutra/Gym-Pass-API-SOLID"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p21} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Gym Pass API (SOLID)</h3>
+              <p className="p">{displayTextGymPassAPI}</p>
+            </div>
+          </div>
         <div
             className="proyecto"
             data-aos={isMobile ? "fade-up" : ""}
@@ -704,7 +750,7 @@ const Portfolio = () => {
               <p>Python Selenium Git</p>
             </div>
           </div>
-          {/* <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
 
               <img src={comingSoon} alt="" />
 
@@ -712,7 +758,7 @@ const Portfolio = () => {
               <h3>Coming Soon</h3>
               <p>Coming Soon</p>
             </div>
-          </div>*/}
+          </div>
         </div>
       </div>
     </section>
