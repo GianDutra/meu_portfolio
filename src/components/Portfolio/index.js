@@ -25,6 +25,8 @@ import p19 from "../../assets/image/p19.png";
 import p20 from "../../assets/image/p20.png";
 import p21 from "../../assets/image/p21.png";
 import p22 from "../../assets/image/p22.png";
+import p23 from "../../assets/image/p23.png";
+import p24 from "../../assets/image/p24.png";
 import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -78,7 +80,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open(
       "https://github.com/GianDutra/Ignite-Feed-TypeScript",
       "_blank"
@@ -89,7 +91,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/Pomodoro", "_blank");
   };
 
@@ -97,7 +99,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/DT-Money", "_blank");
   };
 
@@ -105,7 +107,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/Shop-Nextjs-Challenge", "_blank");
   };
 
@@ -113,7 +115,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/Coffee-delivery", "_blank");
   };
 
@@ -121,7 +123,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/meu_portfolio", "_blank");
   };
 
@@ -129,7 +131,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/tailwind-nextjs", "_blank");
   };
 
@@ -137,7 +139,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/my-design-system", "_blank");
   };
 
@@ -145,7 +147,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/ignite-call", "_blank");
   };
 
@@ -153,7 +155,7 @@ const Portfolio = () => {
     event.preventDefault(); // Impede o comportamento padrão do link
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai
 
-    // Coloque aqui a lógica de redirecionamento para o link desejado
+    // Aqui a lógica de redirecionamento para o link desejado
     window.open("https://github.com/GianDutra/ignite_redux_zustand", "_blank");
   };
   
@@ -218,6 +220,14 @@ const Portfolio = () => {
   ? "TS Node.js React Tailwind WhisperAI ChatGPT OpenAI Shadcn Fastify Prisma WebAssembly"
   : "TypeScript Node React Tailwind WhisperAI ChatGPT OpenAI Shadcn Fastify Prisma WebAssembly"
 
+  const displayTextAzureML = isMobile
+    ? "Azure AI MachineLearning DataScience Regression Dashboard"
+    : "Azure AI Machine_Learning Data_Science Regression Analysis Dashboard";
+
+  const displayTextCognitiveSearch = isMobile
+    ? "Azure AI Search Blob_Storage Document"
+    : "Azure AI Cloud Document_Search Blob_Storage";
+  
   return (
     <section id="portfolio" className="portfolio">
       <div className="contenido-seccion">
@@ -229,6 +239,44 @@ const Portfolio = () => {
             data-aos-duration="400"
             data-aos-easing="ease"
           >
+                        <a
+              href="https://github.com/GianDutra/Machine-Learning-no-Azure-ML"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p23} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Game Sales Predictor</h3>
+              <p className="p">{displayTextAzureML}</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+
+            <a
+              href="https://github.com/GianDutra/Azure-Cognitive-Search"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p24} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Azure Cognitive Search</h3>
+              <p className="p">{displayTextCognitiveSearch}</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+
             <a
               href="https://github.com/GianDutra/Upload.ai_front_end"
               target="_blank"
@@ -750,15 +798,16 @@ const Portfolio = () => {
               <p>Python Selenium Git</p>
             </div>
           </div>
-          <div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
+          {/*<div className="proyecto" data-aos={isMobile ? 'fade-up' : ''} data-aos-duration="400" data-aos-easing="ease">
 
               <img src={comingSoon} alt="" />
 
-            <div className="overlay">
+             <div className="overlay">
               <h3>Coming Soon</h3>
               <p>Coming Soon</p>
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>
