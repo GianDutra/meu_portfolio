@@ -137,13 +137,13 @@ const Skills = () => {
             </div>
 
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <i class="fa-solid fa-robot"></i>
-                <span className="text">Automate</span>
-            </div>
-
-            <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <i class="fa-solid fa-chart-simple"></i>
                 <span className="text">Power BI</span>
+            </div>
+            
+            <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <i class="fa-solid fa-robot"></i>
+                <span className="text">Automate</span>
             </div>
             
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

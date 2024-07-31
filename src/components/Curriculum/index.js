@@ -29,7 +29,7 @@ const isMobile = useMediaQuery({ query: '(max-width: 700px)' });
             <div className="item izq" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease">
               <h4>React.js | Node.js Specialization</h4>
               <span className="casa">Rocketseat</span>
-              <span className="fecha">2023-2024</span>
+              <span className="fecha">2023 - 2024</span>
               <p>Completed a comprehensive specialization in React.js and Node.js with Rocketseat. Acquired expertise in building dynamic front-end applications with React.js and crafting robust back-end solutions using Node.js. Gained hands-on experience with modern tools like Next.js, Docker, and Tailwind CSS, enhancing my full-stack development skills.</p>
               <div className="conectori">
                 <div className="circuloi"></div>
