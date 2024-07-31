@@ -137,8 +137,8 @@ const Skills = () => {
             </div>
 
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <i class="fa-solid fa-chart-pie"></i>
-                <span className="text">Superset</span>
+            <i class="fa-solid fa-robot"></i>
+                <span className="text">Automate</span>
             </div>
 
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -162,8 +162,8 @@ const Skills = () => {
             </div>
 
             <div className="linguagens" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <i class="fa-solid fa-server"></i>
-                <span className="text">Redis</span>
+            <i class="fa-solid fa-chart-pie"></i>
+                <span className="text">Superset</span>
             </div>
 
         </div>
