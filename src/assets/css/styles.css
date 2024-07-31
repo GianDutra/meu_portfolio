@@ -1,0 +1,1567 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* CURSOR */
+
+
+  
+  /* Ajusta o tamanho do cursor */
+body {
+    cursor: url(../image/cursor.svg), auto;
+   
+  }
+
+ 
+
+  
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header .logo a:hover{
+    text-shadow: 0px 0px 8px #28debb;
+}
+
+.contenedor-header header .logo a,
+.contenedor input[type="button"].cursor-clicavel,
+.contenedor input[type="submit"].cursor-clicavel {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+
+/* Cursor personalizado */
+.contenedor-header header nav ul li a,
+.contenedor input[type="button"].cursor-clicavel,
+.sobremi input[type="submit"].cursor-clicavel {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../image/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+} 
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+} 
+
+.inicio .contenido-banner .contenedor-img > img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px 5px;
+    font-size: 20px;
+    transition: .3s;
+  }
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1bb799;
+
+}
+
+
+
+
+@keyframes blink-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .blink {
+    animation: blink-animation 1s step-end infinite;
+  }
+  
+
+  
+/* Cursor personalizado */
+.inicio .contenido-banner .redes a,
+.inicio input[type="button"].cursor-clicavel,
+.inicio input[type="submit"].cursor-clicavel {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
+/* Sobre mi */
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.sobremi img {
+  width: 65%;
+  margin: -1rem 0.625rem 0.625rem 4rem;
+}
+.sobremi h2{
+    font-size: 65px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+    font-size: 28px;
+    
+}
+
+.sobremi .contenido-seccion {
+    font-size: 1.20rem;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .frase {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+
+}
+
+
+.sobremi .borda-frase {
+  padding: 10px;
+  padding-top: 1rem;
+}
+.sobremi .fila .col
+{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    padding-top: 1.3rem;
+}
+.sobremi .fila .col .contenedor-intereses .interes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: rotateX(30deg) translateZ(-15px);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover::before {
+  transform: rotateX(0) translateZ(0);
+}
+.sobremi .fila .col .contenedor-intereses .interes {
+  position: relative;
+  perspective: 1000px;
+  
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+  background: linear-gradient(135deg, #1CB698, #1C92B6);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    
+}
+
+.sobremi .fila .col .contenedor-intereses .interes span {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover span {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i{
+  font-size: 30px;
+  margin-bottom: 2px;
+  transform: rotateX(30deg);
+  transition: transform 0.3s ease-in-out;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover i {
+  transform: rotateX(0);
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1bb799;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+  
+.sobremi button,
+.sobremi a,
+.sobremi input[type="button"],
+.sobremi input[type="submit"] {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
+/* SECCION S K I L L S */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 65px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 32px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+
+.em-andamento {
+    font-weight: bold;
+}
+
+/* Sessão linguagens de programacao e idiomas */
+
+.skills .fila .col_linguagem{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col_linguagem h3{
+    font-size: 32px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .col_linguagem .linguagens{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.skills .col_linguagem .linguagens .text{
+    font-size: 15px;
+}
+
+.skills .col_linguagem .linguagens{
+    width: calc(33.33% - 15px);
+    width: 5.7rem;
+    height: 5.2rem;
+    background-color: #1E2225;
+    border-radius: 10px;
+    margin: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.skills .col_linguagem .linguagens:hover{
+    background-color: #1CB698;
+}
+.skills .col_linguagem .linguagens i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+.skills .col_linguagem .linguagens,
+.skills a,
+.skills input[type="button"],
+.skills input[type="submit"] {
+  cursor: url(../image/cursor.svg), auto;
+}
+
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+
+@keyframes fa-bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .fa-bounce {
+    animation: fa-bounce 1s infinite;
+  }
+  
+  
+.skills .skill .portugues{
+    width: 0%;
+    animation: 2s portugues forwards;
+}
+@keyframes portugues {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .espanhol{
+    width: 0%;
+    animation: 2s espanhol forwards;
+}
+@keyframes espanhol {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .ingles{
+    width: 0%;
+    animation: 2s ingles forwards;
+}
+@keyframes ingles {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .italiano{
+    width: 0%;
+    animation: 2s italiano forwards;
+}
+@keyframes italiano {
+    0%{width: 0%;}
+    100%{width: 48%;}
+}
+
+.skills .skill .japones{
+    width: 0%;
+    animation: 2s japones forwards;
+}
+@keyframes japones {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+
+
+/* SECCION CURRICULUM */
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; 
+}
+.curriculum h2{
+    font-size: 65px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 34px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* SECCION PORTFOLIO */
+
+
+.portfolio {
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.portfolio h2 {
+  font-size: 65px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+
+.portfolio .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -0.285rem;
+  margin-right: -0.285rem;
+  
+}
+
+.portfolio .galeria .proyecto {
+  
+  border: 2px solid #1CB698;
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px 10px 1.55rem 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  
+  
+}
+
+
+
+.portfolio .galeria .proyecto img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s, margin 0.6s;
+  margin: -20px 0 20px -20px; /* Ajustando as margens */
+  position: relative; /* Adicionando position: relative */
+  z-index: 1; /* Ajustando o z-index para que a imagem fique acima da borda */
+}
+
+
+.portfolio .galeria .proyecto .CoffeeImg{
+  width: 100%;
+  display: block;
+  transition: transform 0.6s, margin 0.6s;
+  margin: -20px 0 20px -22.2px; /* Ajustando as margens */
+  position: relative; /* Adicionando position: relative */
+  z-index: 1; /* Ajustando o z-index para que a imagem fique acima da borda */
+}
+
+.portfolio .galeria .proyecto img:hover {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s, margin 0.6s;
+  margin: 0;
+} 
+
+.portfolio .galeria .proyecto .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  background: linear-gradient(0deg, rgb(2, 36, 36) 0%, rgb(2, 36, 36) 35%, rgba(44, 235, 235, 0) 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: height 0.5s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+  padding: 30px 20px 20px 20px;
+  z-index: 2;
+  color: #fff;
+  pointer-events: none;
+}
+
+.portfolio .galeria .proyecto:hover .overlay {
+  height: 35%;
+  opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlayCoffee {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  background: linear-gradient(0deg, rgb(2, 36, 36) 0%, rgb(2, 36, 36) 45%, rgba(44, 235, 235, 0) 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: height 0.5s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+  padding: 30px 20px 20px 20px;
+  z-index: 2;
+  color: #fff;
+  pointer-events: none;
+}
+
+.portfolio .galeria .proyecto:hover .overlayCoffee {
+  height: 35%;
+  opacity: 1;
+}
+
+.portfolio .galeria .proyecto:hover  {
+  border: 2px solid #1CB698;
+  z-index: 3;
+}
+
+
+.portfolio .galeria .proyecto .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+  color:rgb(132,152,159);
+  font-size: 1.1rem;
+}
+
+.portfolio .galeria .proyecto .overlay p {
+  color: #cdd1d6;
+  font-size: 0.60rem;
+}
+
+.portfolio .galeria .proyecto .overlayCoffee h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+  color:rgb(132,152,159);
+  font-size: 1.1rem;
+}
+
+.portfolio .galeria .proyecto .overlayCoffee p {
+  color: #cdd1d6;
+  font-size: 0.60rem;
+}
+
+.button-right_portfolio {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 3.05rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 0.50rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_feed {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 3.75rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 0.50rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_shop {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 3.65rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none; 
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_pomodoro {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 0.40rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem;; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_coffee {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 1.0rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_TailwindForm {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 1.8rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_DesignSystem {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 1.550rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_igniteCall {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 4.20rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+
+.button-right_reduxZustand {
+  width: 10.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  position: fixed;
+  bottom: 10px;
+  right: -2.20rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+  margin-left: 10rem; 
+  margin-bottom: 1.25rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+  margin-right: 1.5rem; 
+  z-index: 3;
+  background-color: none;
+  color:rgb(132,152,159);
+  scale: 60%;
+  pointer-events: auto;
+  font-weight: bold;
+}
+.portfolio .galeria .proyecto .overlay h3,
+.portfolio .galeria .proyecto .overlay p {
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin: -0.85rem;
+  padding: 0px;
+  margin-top: 1.0rem; /* Adicione essa linha para adicionar margem superior */
+}
+
+.portfolio .galeria .proyecto .overlayCoffee h3,
+.portfolio .galeria .proyecto .overlayCoffee p {
+  letter-spacing: 0.1rem;
+  text-align: left;
+  margin: -0.85rem;
+  padding: 0px;
+  margin-top: 1.0rem; /* Adicione essa linha para adicionar margem superior */
+}
+
+
+.portfolio .galeria .proyecto:hover {
+  border: 2px solid #1CB698;
+}
+
+
+
+.portfolio .galeria .proyecto .overlay,
+.portfolio .galeria .proyecto .overlayCoffee,
+.portfolio a,
+.portfolio .contenido-seccion .galeria .proyecto,
+.portfolio input[type="button"],
+.portfolio input[type="submit"] {
+cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
+
+
+
+
+/* SECCION CONTACTO */
+.contacto{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../image/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 4rem;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+}
+
+.contacto h2 {
+    font-size: 65px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.typewrite {
+    min-height: 1em;
+    display: inline-block;
+  }
+  
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .contenido-seccion {
+    border: 1px solid #1CB698;
+}
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #1CB698;
+}
+
+.contacto .col textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.contacto .col .textarea-wrapper {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #28DEBB;
+    width: fit-content;
+    display: block;
+    margin: 0.1875rem auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #28DEBB;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #28DEBB;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto button,
+.contacto a,
+.contacto input[type="button"],
+.contacto input[type="submit"] {
+  cursor: url(../image/cursor_clicavel.svg), auto;
+}
+
+
+.contacto .col .info ul{
+    list-style: none;
+    
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+   
+}
+
+.contacto .col .info h3 {
+    text-align: center;
+    font-size: 1.30rem;
+    
+}
+
+.contacto .col .info p {
+    text-align: center;
+    padding-top: 0.3rem;
+}
+.contacto .col img{
+    display: block;
+    margin:auto;
+    width: 45%;
+}
+
+
+
+
+
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  footer .redes {
+    margin-bottom: 20px;
+  }
+  
+  footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0.5rem 0.2rem;
+    font-size: 20px;
+    transition: .3s;
+  }
+  
+  footer .redes a,
+  footer a,
+  footer input[type="button"],
+  footer input[type="submit"] {
+    cursor: url(../image/cursor_clicavel.svg), auto;
+  }
+  
+  footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+  }
+  
+  /* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #131517;
+}
+
+/* Estilo do indicador de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #1CB698;
+}
+
+/* Estilo do indicador de rolagem ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #16927a;
+}
+
+::-webkit-scrollbar {
+  width: 15px; /* Aumente o valor para aumentar a largura da barra de rolagem */
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+ 
+  html {
+    font-size: 14px;
+  }
+
+  .inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../image/background_mobile3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-attachment: scroll;
+    
+} 
+
+    .sobremi .fila {
+      display: block;
+    }
+    .sobremi .fila .col {
+      width: 100%;
+    }
+  
+    .sobremi img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .sobremi .borda-frase {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+
+    .skills .fila {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .skills .fila .col {
+      width: 100%;
+    }
+    .skills .fila .col_linguagem {
+      width: 100%;
+    }
+    .skills .fila .col .barra-skill {
+      width: 100%;
+    }
+    .skills .fila .col_linguagem .linguagens {
+      width: 100%;
+    }
+  
+    .skills .fila .col_linguagem .linguagens {
+      width: calc(50% - 10px);
+      margin: 0 5px 15px 0;
+    }
+  
+    .skills .fila .col_linguagem .linguagens i {
+      margin-top: 0.7rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .skills .fila .col_linguagem .linguagens .text {
+      margin-bottom: 0.55rem;
+    }
+
+  
+    .curriculum .fila {
+      display: block;
+    }
+    .curriculum .fila .col {
+      width: 100%;
+    }
+    .curriculum .fila .derecha {
+      margin-left: 0;
+    }
+  .curriculum .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden; /* Adicionado overflow:hidden */
+}
+    .portfolio .galeria .proyecto .overlay {
+      pointer-events: initial;
+    }
+    .portfolio .galeria .proyecto .overlay {
+      height: 35%; /* ou qualquer outra altura desejada */
+      opacity: 1;
+    }
+    .portfolio .galeria .proyecto .overlayCoffee {
+      pointer-events: initial;
+    }
+    .portfolio .galeria .proyecto .overlayCoffee {
+      height: 35%; /* ou qualquer outra altura desejada */
+      opacity: 1;
+    }
+    .portfolio .galeria {
+      display: block;
+      width: 100%;
+    }
+    .portfolio .galeria .proyecto {
+      max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img {
+      width: 100%;
+      margin: 0;
+    }
+    .portfolio .galeria .proyecto .CoffeeImg {
+      width: 100%;
+      margin: 0;
+    }
+    .portfolio .galeria .proyecto .overlay h3 {
+      font-size: 1.3rem;
+    }
+    .portfolio .galeria .proyecto .overlayCoffee h3 {
+      font-size: 1.3rem;
+    }
+    .portfolio .galeria .proyecto .overlay p {
+      font-size: 0.70rem;
+    }
+    .portfolio .galeria .proyecto .overlayCoffee p {
+      font-size: 0.70rem;
+    }
+
+    .portfolio .contenido-seccion {
+      position: relative;
+    }
+  
+    .button-right_feed,
+    .button-right_pomodoro,
+    .button-right_shop,
+    .button-right_coffee,
+    .button-right_portfolio,
+    .button-right_TailwindForm,
+    .button-right_DesignSystem,
+    .button-right_igniteCall,
+    .button-right_reduxZustand {
+      
+      position: fixed;
+      right: -2rem; /* Aqui é para ajustar a distância horizontal do texto H2*/
+      margin-left: 10rem; 
+      margin-bottom: -0.55rem; /* Aqui é para ajustar a distância vertical do texto H2*/
+      width: 6.5rem;
+      
+    }
+
+    .portfolio .galeria .proyecto .overlay .p_com_link,
+    .portfolio .galeria .proyecto .overlayCoffee .p_com_link{
+      color: #cdd1d6;
+      max-width: 225px; /* Altura máxima permitida antes do texto começar a mover para baixo */
+      font-size: 9.75px;
+    }
+   
+
+    .contacto  {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+  
+    .contacto .contenido-seccion {
+        max-width: 100%;
+        padding: 0 1rem; /* Adicione um espaçamento interno nas laterais */
+        overflow: hidden; /* Adicione esta linha para ocultar o conteúdo excedente */
+        height: auto; /* Altere a altura para auto */
+        border: none;
+        
+      }
+    
+      .contacto .fila .col {
+        width: 100%;
+        margin-bottom: 2rem; /* Adicione uma margem inferior */
+      }
+    
+      .contacto .col img {
+        padding-top: 10px;
+        display: block;
+        margin: auto;
+        max-width: 100%; /* Adicione esta linha para limitar o tamanho máximo da imagem */
+        height: auto; /* Adicione esta linha para ajustar a altura automaticamente */
+      }
+
+      .contacto h3 {
+        padding-top: 55px;
+      }
+
+      .contacto p {
+        margin-top: 5px;
+      }
+    
+      .contacto .fila .col {
+        width: 100%;
+        margin-bottom: 2rem; /* Adicione uma margem inferior */
+      }
+      
+
+      .contacto .col textarea{
+        width: 100%;
+    }
+
+    .contacto{
+      background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+      url(../image/space2.gif);
+      background-position: center center; 
+      background-size: cover;
+      }
+
+      .contacto button {
+        margin: 0rem auto;
+      
+    }
+      
+    @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+        /* Seu código CSS específico para o iPhone SE */
+        /* Faça as alterações necessárias para corrigir a exibição no iPhone SE */
+        
+            .sobremi .fila {
+      display: block;
+    }
+    .sobremi .fila .col {
+      width: 100%;
+    }
+  
+    .skills .fila {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .skills .fila .col {
+      width: 100%;
+    }
+    .skills .fila .col_linguagem {
+      width: 100%;
+    }
+    .skills .fila .col .barra-skill {
+      width: 100%;
+    }
+    .skills .fila .col_linguagem .linguagens {
+      width: 100%;
+    }
+  
+    .skills .fila .col_linguagem .linguagens {
+      width: calc(50% - 10px);
+      margin: 0 5px 15px 0;
+    }
+  
+    .skills .fila .col_linguagem .linguagens i {
+      margin-top: 0.7rem;
+    }
+  
+    .curriculum .fila {
+      display: block;
+    }
+    .curriculum .fila .col {
+      width: 100%;
+    }
+    .curriculum .fila .derecha {
+      margin-left: 0;
+    }
+  
+    .portfolio .galeria {
+      display: block;
+      width: 100%;
+    }
+    .portfolio .galeria .proyecto {
+      max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img {
+      width: 100%;
+    }
+  
+    .contacto  {
+  /* Resto do seu código CSS */
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+  
+    .contacto .contenido-seccion {
+        border: none;
+        max-width: 100%;
+        padding: 0 1rem; /* Adicione um espaçamento interno nas laterais */
+        overflow: hidden; /* Adicione esta linha para ocultar o conteúdo excedente */
+        height: auto; /* Altere a altura para auto */
+      }
+
+
+    
+      .contacto .col img {
+     
+        margin: auto;
+        max-width: 100%; /* Adicione esta linha para limitar o tamanho máximo da imagem */
+        height: auto; /* Adicione esta linha para ajustar a altura automaticamente */
+      }
+    
+
+      
+
+      .contacto .col textarea{
+        width: 100%;
+  }
+
+  .contacto .col textarea {
+    display: block;
+    height: 7rem;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 0.01rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #1CB698;
+}
+  
+    }
+}
