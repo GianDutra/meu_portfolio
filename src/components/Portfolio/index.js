@@ -295,6 +295,110 @@ const Portfolio = () => {
             data-aos-duration="400"
             data-aos-easing="ease"
           >
+
+          <a
+              href="https://github.com/GianDutra/ScrapyRankingBrands"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p5} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Python Web Crawler</h3>
+              <p>Python MongoDB Git ETL</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+                       <a
+              href="https://github.com/GianDutra/AI_AspiradorPo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p7} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>AI - Vacuum Cleaner</h3>
+              <p>Python Git</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          > 
+             <a
+              href="https://github.com/GianDutra/AI-SQL-Schema-Assistant"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p16} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>AI SQL Query Helper</h3>
+              <p className="p_com_link">{displayTextAISQL}</p>
+              <span className="visit-text"></span>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
+              href="https://github.com/GianDutra/video-transcription-with-AI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p15} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Video Transcription AI</h3>
+              <p className="p_com_link">{displayTextVideoAI}</p>
+              <span className="visit-text"></span>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+            <a
+              href="https://ignite-call-giandutra.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="CoffeeImg" src={p14} alt="" />
+            </a>
+            <div className="overlay">
+              <h3>Ignite Call</h3>
+              <p className="p_com_link">{displayTextIgniteCall}</p>
+              <a
+                className="button-right_igniteCall"
+                href="https://github.com/GianDutra/ignite-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleButtonClickIgniteCall}
+              >
+                <span className="visit-text">
+                  {isMobile ? <>Visit Github</> : "Visit Github"}
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
             <a
               href="https://github.com/GianDutra/Gym-Pass-API-SOLID"
               target="_blank"
@@ -384,73 +488,6 @@ const Portfolio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleButtonClickReduxZustand}
-              >
-                <span className="visit-text">
-                  {isMobile ? <>Visit Github</> : "Visit Github"}
-                </span>
-              </a>
-            </div>
-          </div>
-          <div
-            className="proyecto"
-            data-aos={isMobile ? "fade-up" : ""}
-            data-aos-duration="400"
-            data-aos-easing="ease"
-          >
-            <a
-              href="https://github.com/GianDutra/AI-SQL-Schema-Assistant"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={p16} alt="" />
-            </a>
-            <div className="overlay">
-              <h3>AI SQL Query Helper</h3>
-              <p className="p_com_link">{displayTextAISQL}</p>
-              <span className="visit-text"></span>
-            </div>
-          </div>
-          <div
-            className="proyecto"
-            data-aos={isMobile ? "fade-up" : ""}
-            data-aos-duration="400"
-            data-aos-easing="ease"
-          >
-            <a
-              href="https://github.com/GianDutra/video-transcription-with-AI"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={p15} alt="" />
-            </a>
-            <div className="overlay">
-              <h3>Video Transcription AI</h3>
-              <p className="p_com_link">{displayTextVideoAI}</p>
-              <span className="visit-text"></span>
-            </div>
-          </div>
-          <div
-            className="proyecto"
-            data-aos={isMobile ? "fade-up" : ""}
-            data-aos-duration="400"
-            data-aos-easing="ease"
-          >
-            <a
-              href="https://ignite-call-giandutra.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="CoffeeImg" src={p14} alt="" />
-            </a>
-            <div className="overlay">
-              <h3>Ignite Call</h3>
-              <p className="p_com_link">{displayTextIgniteCall}</p>
-              <a
-                className="button-right_igniteCall"
-                href="https://github.com/GianDutra/ignite-call"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleButtonClickIgniteCall}
               >
                 <span className="visit-text">
                   {isMobile ? <>Visit Github</> : "Visit Github"}
@@ -732,24 +769,7 @@ const Portfolio = () => {
             data-aos-duration="400"
             data-aos-easing="ease"
           >
-            <a
-              href="https://github.com/GianDutra/ScrapyRankingBrands"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={p5} alt="" />
-            </a>
-            <div className="overlay">
-              <h3>Python Web Crawler</h3>
-              <p>Python MongoDB Git</p>
-            </div>
-          </div>
-          <div
-            className="proyecto"
-            data-aos={isMobile ? "fade-up" : ""}
-            data-aos-duration="400"
-            data-aos-easing="ease"
-          >
+            
             <a
               href="https://github.com/GianDutra/Estoque_JavaFx"
               target="_blank"
@@ -760,24 +780,6 @@ const Portfolio = () => {
             <div className="overlay">
               <h3>JavaFx Stock</h3>
               <p>Java JavaFx Git PostgreSQL</p>
-            </div>
-          </div>
-          <div
-            className="proyecto"
-            data-aos={isMobile ? "fade-up" : ""}
-            data-aos-duration="400"
-            data-aos-easing="ease"
-          >
-            <a
-              href="https://github.com/GianDutra/AI_AspiradorPo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={p7} alt="" />
-            </a>
-            <div className="overlay">
-              <h3>AI - Vacuum Cleaner</h3>
-              <p>Python Git</p>
             </div>
           </div>
           <div
