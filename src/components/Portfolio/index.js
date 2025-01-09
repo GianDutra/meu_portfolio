@@ -305,7 +305,7 @@ const Portfolio = () => {
             </a>
             <div className="overlay">
               <h3>Python Web Crawler</h3>
-              <p>Python MongoDB Git ETL</p>
+              <p>Python Scrapy MongoDB Git ETL</p>
             </div>
           </div>
           <div
