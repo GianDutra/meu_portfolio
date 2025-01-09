@@ -23,7 +23,7 @@ const Home = () => {
             </div>
             <h1>GIAN DUTRA</h1>
 
-            <TypewriterComponent phrases={["software engineer", "bpmn modeler", "full-stack dev", "lss green belt"]} period={50} eraseSpeed={150}/>
+            <TypewriterComponent phrases={["software engineer", "data scientist", "lss green belt"]} period={50} eraseSpeed={150}/>
 
             <div class="redes">
                 <a href="https://github.com/GianDutra" target="_blank"><i className="fa-brands fa-github"></i></a>
