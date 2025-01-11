@@ -68,7 +68,7 @@ const isMobile = useMediaQuery({ query: '(max-width: 700px)' });
             <div className="item der" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
               <h4>{isMobile ? 'Intern in Digital Transformation' : 'Digital Transformation Intern'}</h4>
               <span className="casa">Ypê</span>
-              <span className="fecha">2024 - Present</span>
+              <span className="fecha">2024 (Full Year)</span>
               <p>I am working on simplifying project management tools using Power BI, Excel, and PWA. My role involves exploring AI tools for project management, conducting meetings in English and Spanish, and automating workflows with Power Automate. Additionally, I create interactive dashboards to enhance project oversight and decision-making.</p>
               <div className="conectord">
                 <div className="circulod"></div>

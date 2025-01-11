@@ -27,6 +27,9 @@ import p21 from "../../assets/image/p21.png";
 import p22 from "../../assets/image/p22.png";
 import p23 from "../../assets/image/p23.png";
 import p24 from "../../assets/image/p24.png";
+import p25 from "../../assets/image/p25.png";
+import p26 from "../../assets/image/p26.png";
+import p27 from "../../assets/image/p27.png";
 import comingSoon from '../../assets/image/coming-soon.png'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -224,6 +227,18 @@ const Portfolio = () => {
     ? "Azure AI MachineLearning DataScience Regression Dashboard"
     : "Azure AI Machine_Learning Data_Science Regression Analysis Dashboard";
 
+  const displayTextSalaryPredictor = isMobile
+    ? "Python Scikit-learn FastAPI Streamlit Joblib PolynomialRegression"
+    : "Python Scikit-learn FastAPI Streamlit Joblib Polynomial_Regression";
+  
+  const displayTextMileageEstimator = isMobile
+    ? "Python Scikit-learn FastAPI Statsmodels Uvicorn SimpleLinearRegression"
+    : "Python Scikit-learn FastAPI Statsmodels Uvicorn Simple_Linear_Regression";
+  
+  const displayTextGradePredictor = isMobile
+    ? "Python Scikit-learn Gradio Joblib MultipleLinearRegression"
+    : "Python Scikit-learn Gradio Joblib Multiple_Linear_Regression";
+
   const displayTextCognitiveSearch = isMobile
     ? "Azure AI Search Blob_Storage Document"
     : "Azure AI Cloud Document_Search Blob_Storage";
@@ -239,6 +254,67 @@ const Portfolio = () => {
             data-aos-duration="400"
             data-aos-easing="ease"
           >
+
+
+          <a
+              href="https://github.com/GianDutra/modelo_salario_RLP"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p27} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Salary Predictor</h3>
+              <p className="p">{displayTextSalaryPredictor}</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+
+
+          <a
+              href="https://github.com/GianDutra/modelo_avaliacao_RLM"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p26} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Grade Predictor</h3>
+              <p className="p">{displayTextGradePredictor}</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+
+
+            <a
+              href="https://github.com/GianDutra/modelo_regressao_combustivel_distancia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={p25} alt="" />
+            </a>
+            <div className="overlayCoffee">
+              <h3>Mileage Estimator</h3>
+              <p className="p">{displayTextMileageEstimator}</p>
+            </div>
+          </div>
+          <div
+            className="proyecto"
+            data-aos={isMobile ? "fade-up" : ""}
+            data-aos-duration="400"
+            data-aos-easing="ease"
+          >
+
                         <a
               href="https://github.com/GianDutra/Machine-Learning-no-Azure-ML"
               target="_blank"
