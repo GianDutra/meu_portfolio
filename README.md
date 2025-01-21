@@ -15,4 +15,4 @@
   
 # My amazing portfolio 🌠
 - My portfolio where my projects and information about my career are.
-- **[Portfolio Link](https://meu-portfolio-giandutra.vercel.app/)** 
+- **[Portfolio Link](https://meu-portfolio-giandutras-projects.vercel.app/)** 
